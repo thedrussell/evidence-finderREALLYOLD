@@ -1,0 +1,2572 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34475842",
+        "Title":
+          "Effect of Housing First on Suicidal Behaviour: A Randomised Controlled Trial of Homeless Adults with Mental Disorders",
+        "Author": "Aquin (2017)",
+        "Year": "2017",
+        "Link": "http://journals.sagepub.com/doi/abs/10.1177/0706743717694836",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116907",
+        "Title":
+          "A Multiple-City RCT of Housing First With Assertive Community Treatment for Homeless Canadians With Serious Mental Illness",
+        "Author": "Aubry (2015)",
+        "Year": "2015",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201400587",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477613",
+        "Title":
+          "A Multiple-City RCT of Housing First With Assertive Community Treatment for Homeless Canadians With Serious Mental Illness",
+        "Author": "Aubry (2016)",
+        "Year": "2016",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201400587",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483654",
+        "Title":
+          "Housing first for people with severe mental illness who are homeless: A review of the research and findings from the At Home-Chez soi demonstration project",
+        "Author": "Aubry (2015)",
+        "Year": "2015",
+        "Link":
+          "http://journals.sagepub.com/doi/abs/10.1177/070674371506001102",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477615",
+        "Title":
+          "One-year outcomes of a randomized controlled trial of housing first with ACT in five Canadian cities",
+        "Author": "Aubry (2015)",
+        "Year": "2015",
+        "Link":
+          "http://onlinelibrary.wiley.com/o/cochrane/clcentral/articles/716/CN-01076716/frame.html",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34481616",
+        "Title":
+          "Contribution of a shelter-based survey for screening respiratory diseases in the homeless",
+        "Author": "Badiaga (2009)",
+        "Year": "2009",
+        "Link": "https://academic.oup.com/eurpub/article/19/2/157/428713",
+        "Context": "Notre-Dame-Limite, Marseille",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [5.3617747, 43.3804667], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477620",
+        "Title":
+          "Brief Motivational Intervention With Homeless Adolescents: evaluating Effects on Substance Use and Service Utilization",
+        "Author": "Baer (2007)",
+        "Year": "2007",
+        "Link": "http://psycnet.apa.org/record/2007-18113-018",
+        "Context": "Seattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.3320708, 47.6062095], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477622",
+        "Title":
+          "Financial incentives for smoking abstinence in homeless smokers: a randomized controlled trial",
+        "Author": "Baggett (2017)",
+        "Year": "2017",
+        "Link": "https://doi.org/10.1093/ntr/ntx178",
+        "Context": "Massachusetts",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.3824374, 42.4072107], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483674",
+        "Title":
+          "Counseling outcome research: The use of the Addiction Severity Index in a homeless population",
+        "Author": "Ballard (2003)",
+        "Year": "2003",
+        "Link": "",
+        "Context": "San Antonio, TX",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-98.49362819999999, 29.4241219],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478365",
+        "Title":
+          "Abuse, support, and depression among homeless and runaway adolescents",
+        "Author": "Bao (2000)",
+        "Year": "2000",
+        "Link": "http://www.jstor.org/stable/2676294",
+        "Context": "Missouri\nIowa\nNebraska\nKansas",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-95.3072095, 39.9727729], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478371",
+        "Title":
+          "Mantram Repetition Program Decreases Insomnia Among Homeless Women: A Pilot Study",
+        "Author": "Barger (2015)",
+        "Year": "2015",
+        "Link": "https://doi.org/10.3928/02793695-20150526-03",
+        "Context": "California",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-119.4179324, 36.778261], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478384",
+        "Title": "The utility of mentoring homeless adolescents: a pilot study",
+        "Author": "Bartle-Haring (2012)",
+        "Year": "2012",
+        "Link":
+          "https://www.tandfonline.com/doi/abs/10.3109/00952990.2011.643985",
+        "Context": "Columbus, OH",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-82.99879419999999, 39.9611755],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34874202",
+        "Title":
+          "Comparative Cost Analysis of Housing and Case Management Program for Chronically Ill Homeless Adults Compared to Usual Care",
+        "Author": "Basu (2012)",
+        "Year": "2012",
+        "Link": "https://doi.org/10.1111/j.1475-6773.2011.01350.x",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116905",
+        "Title":
+          "Community Integration of Formerly Homeless Men and Women With Severe Mental Illness After Hospital Discharge",
+        "Author": "Baumgartner (2013)",
+        "Year": "2012",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201100392",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116904",
+        "Title":
+          "Forensic and Nonforensic Clients in Assertive Community Treatment: A Longitudinal Study",
+        "Author": "Craig (2013)",
+        "Year": "2013",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/full/10.1176/appi.ps.201200170",
+        "Context": "New York State, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-74.21793260000001, 43.2994285],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478400",
+        "Title":
+          "The impact of housing first and peer support on people who are medically vulnerable and homeless",
+        "Author": "Bean (2013)",
+        "Year": "2013",
+        "Link": "http://dx.doi.org/10.1037/h0094748",
+        "Context": "Phoenix, AZ",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-112.0740373, 33.4483771], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34475917",
+        "Title":
+          "A randomized controlled trial of intensive care management for disabled Medicaid beneficiaries with high health care costs",
+        "Author": "Bell (2015)",
+        "Year": "2015",
+        "Link": "https://doi.org/10.1111/1475-6773.12258",
+        "Context": "King County, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-121.9836029, 47.5480339], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483710",
+        "Title": "Mindfulness intervention with homeless youth",
+        "Author": "Bender (2015)",
+        "Year": "2015",
+        "Link": "https://www.journals.uchicago.edu/doi/abs/10.1086/684107",
+        "Context": "Denver, CO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-104.990251, 39.7392358], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116902",
+        "Title":
+          "A comprehensive costing analysis of intensive case management for individuals with severe mental illness and a history of homelessness, including cost-effectiveness as compared to standard care",
+        "Author": "Birnie, (2009)",
+        "Year": "2009",
+        "Link": "http://hdl.handle.net/10393/29756",
+        "Context": "Ottawa, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-75.69719309999999, 45.4215296],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116801",
+        "Title":
+          "Assertive Community Treatment for Frequent Users of Psychiatric Hospitals in a Large City: A Controlled Study",
+        "Author": "Bond (1990)",
+        "Year": "1990",
+        "Link": "https://doi.org/10.1007/BF00938068",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116800",
+        "Title":
+          "Does Coordination of Welfare Services Delivery Make a Difference for Extremely Disadvantages Jobseekers?",
+        "Author": "JEFF (2013)",
+        "Year": "2013",
+        "Link": "https://doi.org/10.1111/1475-4932.12062",
+        "Context":
+          "Cheltenham, VIC\nFrankston, VIC\nBendigo, VIC\nMelbourne, VIC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [145.121745, -38.1440964], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477644",
+        "Title":
+          "Can shelter-based interventions improve treatment engagement in homeless individuals with psychiatric and/or substance misuse disorders?: a randomized controlled trial",
+        "Author": "Bradford (2005)",
+        "Year": "2005",
+        "Link":
+          "https://journals.lww.com/lww-medicalcare/Abstract/2005/08000/Can_Shelter_Based_Interventions_Improve_Treatment.3.aspx",
+        "Context": "Chapel Hill, NC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.0558445, 35.9131996], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483776",
+        "Title":
+          "Housing first as an effective model for community stabilization among vulnerable individuals with chronic and nonchronic homelessness histories",
+        "Author": "Brown (2016)",
+        "Year": "2016",
+        "Link": "https://doi.org/10.1002/jcop.21763",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483780",
+        "Title":
+          "Health outcomes of obtaining housing among older homeless adults",
+        "Author": "Brown (2015)",
+        "Year": "2015",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2014.302539",
+        "Context": "Boston, MA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.0588801, 42.3600825], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483781",
+        "Title":
+          "Homelessness prevention for former foster youth: Utilization of transitional housing programs",
+        "Author": "Brown (2010)",
+        "Year": "2010",
+        "Link":
+          "https://www.sciencedirect.com/science/article/pii/S0190740910001969",
+        "Context": "San Francisco, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.4194155, 37.7749295], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34481773",
+        "Title":
+          "The Effects of Respite Care for Homeless Patients: A Cohort Study",
+        "Author": "Buchanan (2006)",
+        "Year": "2006",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2005.067850",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116799",
+        "Title":
+          "The health impact of supportive housing for HIV-positive homeless patients: a randomized controlled trial.",
+        "Author": "Buchanan (2009)",
+        "Year": "2009",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2008.137810",
+        "Context": "Cook County, Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34475997",
+        "Title":
+          "A health sciences student-run smoking cessation clinic experience within a homeless population",
+        "Author": "Buckley (2017)",
+        "Year": "2017",
+        "Link": "https://doi.org/10.1016/j.japh.2016.09.008",
+        "Context": "Phoenix, AR",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-112.0740373, 33.4483771], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116798",
+        "Title": "Prototypical Profiles of the Brief Psychiatric Rating Scale",
+        "Author": "Burger (2000)",
+        "Year": "2000",
+        "Link":
+          "https://www.tandfonline.com/doi/abs/10.1207/S15327752JPA7503_02",
+        "Context": "St Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116797",
+        "Title":
+          "The Impact of Assertive Community Treatment on the Social Relationships of People Who Are Homeless and Mentally Ill",
+        "Author": "Robert (1998)",
+        "Year": "1998",
+        "Link": "https://link.springer.com/article/10.1023/A:1018711001348",
+        "Context": "St Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116795",
+        "Title":
+          "Impact of assertive community treatment and client characteristics on criminal justice outcomes in dual disorder homeless individuals.",
+        "Author": "Calsyn (2005)",
+        "Year": "2005",
+        "Link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cbm.24",
+        "Context": "St Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116793",
+        "Title":
+          "Impact of Supported Housing on Clinical Outcomes Analysis of a Randomized Trial Using Multiple Imputation Technique",
+        "Author": "An-Lin (2007)",
+        "Year": "2007",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3073142/",
+        "Context": "New Haven, CT",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-72.9278835, 41.308274], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34116792",
+        "Title":
+          "Comparing Consumer and Nonconsumer Provided Case Management Services for Homeless Persons with Serious Mental Illness",
+        "Author": "Chinman, (2000)",
+        "Year": "2000",
+        "Link":
+          "https://journals.lww.com/jonmd/Abstract/2000/07000/Comparing_Consumer_and_Nonconsumer_Provided_Case.9.aspx",
+        "Context":
+          "Bridgeport, CT\nChicago, IL\nWichita, KS\nSt Louis, MO\nCharlotte, NC\nWest Philadelphia, PA\nFort Worth, TX\nRichmond, VA\nSeattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-73.1894384, 41.1792258], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477680",
+        "Title":
+          "Psychiatric hospitalizations, arrests, emergency room visits, and homelessness of clients with serious and persistent mental illness: findings from a randomized trial of two ACT programs vs. usual care",
+        "Author": "Clarke (2000)",
+        "Year": "2000",
+        "Link": "https://link.springer.com/article/10.1023%2FA%3A1010141826867",
+        "Context": "Portland, OR",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.6764815, 45.5230622], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34050617",
+        "Title": "Case Managed Residentiai Care for Homeless Addicted Veterans",
+        "Author": "Conrad (1998)",
+        "Year": "1998",
+        "Link":
+          "https://journals.lww.com/lww-medicalcare/Abstract/1998/01000/Case_Managed_Residential_Care_for_Homeless.6.aspx",
+        "Context": "Hines, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.8391929, 41.8579519], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34050616",
+        "Title":
+          "Outcome of a Controlled Trial of the Effectiveness of Intensive Case Management for Chronic Public Inebriates*",
+        "Author": "Outcome (1998)",
+        "Year": "1998",
+        "Link": "https://www.jsad.com/doi/abs/10.15288/jsa.1998.59.523",
+        "Context": "Seattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.3320708, 47.6062095], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34050615",
+        "Title":
+          "The Lambeth Early Onset (LEO) Team: randomised controlled trial of the effectiveness of specialised care for early psychosis",
+        "Author": "Tom (2004)",
+        "Year": "2004",
+        "Link": "https://doi.org/10.1136/bmj.38246.594873.7C",
+        "Context": "Lambeth, London",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-0.1230681, 51.4571477], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34481971",
+        "Title":
+          "Homelessness Prevention: The Effect of a Shallow Rent Subsidy Program on Housing Outcomes among People with HIV or AIDS",
+        "Author": "Dasinger (2007)",
+        "Year": "2007",
+        "Link": "http://dx.doi.org/10.1007/s10461-007-9250-7",
+        "Context": "Almaeda County, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-121.7195459, 37.6016892], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34050585",
+        "Title":
+          "Assertive community treatment for patients with co-occurring severe mental illness and substance use disorder: a clinical trial.",
+        "Author": "Drake (1998)",
+        "Year": "1998",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/9589759",
+        "Context": "Lebanon, NH",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-72.2517569, 43.6422934], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34040449",
+        "Title":
+          "Comparison of ACT and Standard Case Management for Delivering Integrated Treatment for Co-occurring Disorders",
+        "Author": "Essock (2006)",
+        "Year": "2006",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/full/10.1176/appi.ps.57.2.185",
+        "Context": "Connecticut",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-73.087749, 41.6032207], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482105",
+        "Title":
+          "Adapting the Individual Placement and Support Model with Homeless Young Adults",
+        "Author": "Ferguson (2012)",
+        "Year": "2012",
+        "Link": "https://link.springer.com/article/10.1007%2Fs10566-011-9163-5",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34039373",
+        "Title":
+          "Evaluation of Treatment Programs for Dual Disorder Individuals:",
+        "Author": "Fletcher (2008)",
+        "Year": "2008",
+        "Link": "https://dx.doi.org/10.1007/s10488-008-0170-2",
+        "Context": "St. Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482145",
+        "Title":
+          "Family Unification Program: Housing Services for Homeless Child Welfare-Involved Families",
+        "Author": "Fowler (2014)",
+        "Year": "2014",
+        "Link": "https://doi.org/10.1080/10511482.2014.881902",
+        "Context": "St. Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34035024",
+        "Title":
+          "Economic evaluation of a prerelease substance abuse treatment program for repeat criminal offenders.",
+        "Author": "French (2010)",
+        "Year": "2010",
+        "Link":
+          "https://linkinghub.elsevier.com/retrieve/pii/S0740-5472(09)00095-6",
+        "Context": "New Jersey",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.4056612, 40.0583238], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34035023",
+        "Title":
+          "Aversion to Injection Limits Acceptability of Extended-Release Naltrexone Among Homeless, Alcohol-Dependent Patients",
+        "Author": "Peter (2013)",
+        "Year": "2013",
+        "Link":
+          "https://www.tandfonline.com/doi/abs/10.1080/08897077.2012.763083",
+        "Context": "Valley, Providence, RI",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-71.43438909999999, 41.8293588],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34035022",
+        "Title":
+          "Use of integrated dual disorder treatment via assertive community treatment versus clinical case management for persons with co-occurring disorders and antisocial personality disorder.",
+        "Author": "Frisman (2009)",
+        "Year": "2009",
+        "Link":
+          "https://journals.lww.com/jonmd/Abstract/2009/11000/Use_of_Integrated_Dual_Disorder_Treatment_Via.5.aspx",
+        "Context": "West Hartford, CT",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-72.7420151, 41.7620842], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34035021",
+        "Title":
+          "Chronic disease management for recently homeless veterans: a clinical practice improvement program to apply home telehealth technology to a vulnerable population.",
+        "Author": "Gabrielian (2013)",
+        "Year": "2013",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3786687/",
+        "Context": "Los Angeles",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.2436849, 34.0522342], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34035020",
+        "Title":
+          "Specialised care for early psychosis: symptoms, social functioning and patient satisfaction: randomised controlled trial.",
+        "Author": "Garety (2006)",
+        "Year": "2006",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/16388068",
+        "Context": "Camberwell, London",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-0.09301369999999999, 51.4740846],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34035019",
+        "Title":
+          "Effect of Full-Service Partnerships on Homelessness, Use and Costs of Mental Health Services, and Quality of Life Among Adults With Serious Mental Illness",
+        "Author": "Todd (2010)",
+        "Year": "2010",
+        "Link":
+          "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/210805",
+        "Context": "San Diego County, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-117.1610966, 32.7157305], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34028059",
+        "Title":
+          "Housing placement and subsequent days homeless among formerly homeless adults with mental illness.",
+        "Author": "Goldfinger (1999)",
+        "Year": "1999",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/ps.50.5.674?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed",
+        "Context": "Boston, MA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.0588801, 42.3600825], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476374",
+        "Title":
+          "Improving Outcomes for Unemployed and Homeless Young People: Findings of the YP Clinical Controlled Trial of Joined Up Case Management",
+        "Author": "Grace (2014)",
+        "Year": "2014",
+        "Link":
+          "https://www.tandfonline.com/doi/abs/10.1080/0312407X.2014.911926",
+        "Context":
+          "Frankston, VIC\nCheltenham, VIC\nMelbourne, VIC\nBendigo, VIC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [145.055556, -37.96713099999999],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34050584",
+        "Title":
+          "An Evaluation of the Minnesota Comprehensive Offender Reentry Plan (MCORP) Pilot Project: Final Report",
+        "Author": "Duwe (2013)",
+        "Year": "2013",
+        "Link": "https://www.leg.state.mn.us/docs/2014/other/140531.pdf",
+        "Context": "St. Paul, MN",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-93.0899578, 44.9537029], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34026224",
+        "Title":
+          "Decreasing Psychiatric Symptoms by Increasing Choice in Services for Adults with Histories of Homelessness",
+        "Author": "Ronni (2005)",
+        "Year": "2005",
+        "Link": "https://link.springer.com/article/10.1007/s10464-005-8617-z",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34026222",
+        "Title":
+          "Housing, hospitalization, and cost outcomes for homeless individuals with psychiatric disabilities participating in continuum of care and housing first programmes",
+        "Author": "Leyla (2013)",
+        "Year": "2003",
+        "Link": "http://onlinelibrary.wiley.com/doi/10.1002/casp.723/abstract",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476436",
+        "Title":
+          "Residential treatment for homeless female veterans with psychiatric and substance use disorders: Effect on 1-year clinical outcomes",
+        "Author": "Harpaz-Rotem (2011)",
+        "Year": "2011",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/22068368",
+        "Context": "West Haven, CT",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-72.9469711, 41.2705484], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34019331",
+        "Title":
+          "A Randomized Trial of Critical Time Intervention to Prevent Homelessness in Persons with Severe Mental Illness following Institutional Discharge",
+        "Author": "Daniel (2011)",
+        "Year": "2011",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/ps.62.7.pss6207_0713",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33908796",
+        "Title":
+          "Cost-Utility Analysis of the Housing and Health Intervention for Homeless and Unstably Housed Person Living with HIV",
+        "Author": "Holtgrave (2013)",
+        "Year": "2013",
+        "Link": "https://link.springer.com/article/10.1007%2Fs10461-012-0204-3",
+        "Context": "Baltimore, MD\nChicago, IL\nLos Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-76.6121893, 39.2903848], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33965893",
+        "Title":
+          "Effectiveness and cost-effectiveness of admissions to women’s crisis houses compared with traditional psychiatric wards: pilot patient-preference randomised controlled trial",
+        "Author": "Howard (2010)",
+        "Year": "2011",
+        "Link": "http://discovery.ucl.ac.uk/id/eprint/149993",
+        "Context": "Croydon, London\nDrayton Park, London",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-0.070062, 51.3679705], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33908794",
+        "Title": "Providing Independent Housing for the Homeless Mentally Ill",
+        "Author": "Hurlburt, (1996)",
+        "Year": "1996",
+        "Link":
+          "http://onlinelibrary.wiley.com/doi/10.1002/(SICI)1520-6629(199607)24:3%3C291::AID-JCOP8%3E3.0.CO;2-%23/abstract",
+        "Context": "San Diego, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-117.1610838, 32.715738], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33965894",
+        "Title":
+          "Health status, quality of life, residential stability, substance use, and health care utilization among adults applying to a supportive housing program.",
+        "Author": "Hwang (2011)",
+        "Year": "2011",
+        "Link": "https://link.springer.com/article/10.1007%2Fs11524-011-9592-3",
+        "Context": "Toronto , ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477804",
+        "Title":
+          "Ending homelessness among people with mental illness: the At Home/Chez Soi randomized trial of a Housing First intervention in Toronto",
+        "Author": "Hwang (2012)",
+        "Year": "2012",
+        "Link":
+          "https://bmcpublichealth.biomedcentral.com/articles/10.1186/1471-2458-12-78774464/frame.html",
+        "Context": "Toronto , ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33965900",
+        "Title":
+          "The Effects of Housing Assistance on Labor Supply: Evidence from a Voucher Lottery",
+        "Author": "Brian A.  (2012)",
+        "Year": "2012",
+        "Link": "https://www.aeaweb.org/articles?id=10.1257/aer.102.1.272",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34486766",
+        "Title":
+          "Continuity of care for recently released prisoners with mental illness: a pilot randomised controlled trial testing the feasibility of a Critical Time Intervention",
+        "Author": "Jarrett (2012)",
+        "Year": "2012",
+        "Link": "https://doi.org/10.1017/S2045796011000783",
+        "Context": "London\nManchester",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-2.1963723, 53.5473627], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476559",
+        "Title":
+          "Cost-effectiveness of critical time intervention to reduce homelessness among persons with mental illness",
+        "Author": "Jones (2003)",
+        "Year": "2003",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.54.6.884",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484296",
+        "Title":
+          "The brighter future for homeless families and their preschoolers' program in salt lake city, Utah",
+        "Author": "Kadoura (2015)",
+        "Year": "2015",
+        "Link":
+          "https://search.proquest.com/openview/1fa9ed283811ccb8de516a244364a5f3/1?pq-origsite=gscholar&cbl=18750&diss=y",
+        "Context": "Salt Lake City, UT",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-111.8910474, 40.7607793], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484299",
+        "Title":
+          "Impact of work therapy on health status among homeless, substance-dependent veterans: A randomized controlled trial",
+        "Author": "Kashner (2002)",
+        "Year": "2002",
+        "Link":
+          "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/206772",
+        "Context": "Bedford, MA\nNorthhampton, MA\nTopeka, KS\nSt Cloud, MN",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.2760089, 42.4906231], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476583",
+        "Title":
+          "Outcomes of critical time intervention case management of homeless veterans after psychiatric hospitalization",
+        "Author": "Kasprow (2007)",
+        "Year": "2007",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/full/10.1176/ps.2007.58.7.929",
+        "Context":
+          "Chicago, IL\nHines, IL\nHouston, TX\nLyons, NJ\nMontrose, NY\nRichmond, VA\nSalem, VA\nSan Diego, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477824",
+        "Title":
+          "A computer-assisted motivational social network intervention to reduce alcohol, drug and HIV risk behaviors among Housing First residents",
+        "Author": "Kennedy (2016)",
+        "Year": "2016",
+        "Link":
+          "https://ascpjournal.biomedcentral.com/articles/10.1186/s13722-016-0052-y",
+        "Context": "Los Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.2436849, 34.0522342], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482473",
+        "Title":
+          "Evaluation of treatment programs for persons with severe mental illness: moderator and mediator effects",
+        "Author": "Kenny (2004)",
+        "Year": "2004",
+        "Link": "http://journals.sagepub.com/doi/abs/10.1177/0193841X04264701",
+        "Context": "St Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482477",
+        "Title":
+          "Vocational Rehabilitation of Participants with Severe Substance Use Disorders in a VA Veterans Industries Program",
+        "Author": "Kerrigan (2004)",
+        "Year": "2004",
+        "Link": "https://www.tandfonline.com/doi/abs/10.1081/JA-200034695",
+        "Context": "Houston, TX",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-95.3698028, 29.7604267], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476605",
+        "Title":
+          "Post-hospital medical respite care and hospital readmission of homeless persons",
+        "Author": "Kertesz (2009)",
+        "Year": "2009",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/19363773",
+        "Context": "Boston, MA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.0588801, 42.3600825], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33965903",
+        "Title":
+          "Long-Term Housing and Work Outcomes Among Treated Cocaine-Dependent Homeless Persons",
+        "Author": "Stefan (2007)",
+        "Year": "2007",
+        "Link": "https://link.springer.com/article/10.1007%2Fs11414-006-9041-3",
+        "Context": "Birmingham, AL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-86.80248999999999, 33.5206608],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484322\nDUPLICATE",
+        "Title":
+          "Long-term housing and work outcomes among treated cocaine-dependent homeless persons",
+        "Author": "Kertesz (2007)",
+        "Year": "2007",
+        "Link": "https://link.springer.com/article/10.1007%2Fs11414-006-9041-3",
+        "Context": "Birmingham, AL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-86.80248999999999, 33.5206608],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477836",
+        "Title":
+          "The REACT study: randomised evaluation of assertive community treatment in north London",
+        "Author": "Killaspy (2006)",
+        "Year": "2006",
+        "Link": "https://doi.org/10.1136/bmj.38773.518322.7C",
+        "Context": "Camden, London\nIslington, London",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-0.1058058, 51.5465063], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484331",
+        "Title":
+          "The impact of a Housing First randomized controlled trial on substance use problems among homeless individuals with mental illness",
+        "Author": "Kirst (2015)",
+        "Year": "2015",
+        "Link":
+          "https://www.drugandalcoholdependence.com/article/S0376-8716(14)01882-1/fulltext",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33965906",
+        "Title":
+          "The Helping Alliance in Case Management for Homeless Persons with Severe Mental Illness",
+        "Author": "W. (1998)",
+        "Year": "1998",
+        "Link": "https://link.springer.com/article/10.1023/A:1018758917277",
+        "Context": "St. Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477844",
+        "Title":
+          "A randomized clinical trial of a Therapeutic Workplace for chronically unemployed, homeless, alcohol-dependent adults",
+        "Author": "Koffarnus (2011)",
+        "Year": "2011",
+        "Link": "https://doi.org/10.1093/alcalc/agr057",
+        "Context": "Baltimore, MD",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-76.6121893, 39.2903848], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "33969408",
+        "Title":
+          "Monetary incentives to reinforce engagement and achievement in a job‐skills training program for homeless, unemployed adults.",
+        "Author": "Koffarnus, (2013)",
+        "Year": "2013",
+        "Link": "https://onlinelibrary.wiley.com/doi/full/10.1002/jaba.60",
+        "Context": "Baltimore, MD",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-76.6121893, 39.2903848], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476635",
+        "Title": "\"Housing First\" for Homeless Youth With Mental Illness",
+        "Author": "Kozloff (2016)",
+        "Year": "2016",
+        "Link":
+          "http://pediatrics.aappublications.org/content/early/2016/09/26/peds.2016-1514",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477850",
+        "Title":
+          "Housing first for homeless youth with mental illness: analysis from a randomized controlled trial",
+        "Author": "Kozloff (2016)",
+        "Year": "2016",
+        "Link": "https://www.jaacap.com/article/S0890-8567(16)31383-1/abstract",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477851",
+        "Title":
+          "Fidelity of a strengths-based intervention used by dutch shelters for homeless young adults",
+        "Author": "Krabbenborg (2015)",
+        "Year": "2015",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201300425",
+        "Context": "Arnhem-Nijmegen",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [5.885833, 51.914722], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476643",
+        "Title":
+          "Housing histories of assertive community treatment clients: program impacts and factors associated with residential stability",
+        "Author": "Kreindler (2010)",
+        "Year": "2010",
+        "Link":
+          "http://journals.sagepub.com/doi/abs/10.1177/070674371005500306",
+        "Context": "Winnipeg, MB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-97.13837439999999, 49.895136],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34487010",
+        "Title":
+          "Case management is associated with improved antiretroviral adherence and CD4(+) cell counts in homeless and marginally housed individuals with HIV infection",
+        "Author": "Kushel (2006)",
+        "Year": "2006",
+        "Link": "https://academic.oup.com/cid/article/43/2/234/334950",
+        "Context": "San Francisco, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.4194155, 37.7749295], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476666",
+        "Title":
+          "Health care and public service use and costs before and after provision of housing for chronically homeless persons with severe alcohol problems",
+        "Author": "Larimer (2009)",
+        "Year": "2009",
+        "Link": "https://jamanetwork.com/journals/jama/fullarticle/183666",
+        "Context": "Seattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.3320708, 47.6062095], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031515",
+        "Title":
+          "A randomized trial of assertive community treatment for homeless persons with severe mental illness.",
+        "Author": "Lehman (1997)",
+        "Year": "1997",
+        "Link": "http://dx.doi.org/10.1001/archpsyc.1997.01830230076011",
+        "Context": "Baltimore, MD",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-76.6121893, 39.2903848], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476677",
+        "Title":
+          "Capturing intervention effects over time: reanalysis of a critical time intervention for homeless mentally ill men",
+        "Author": "Lennon (2005)",
+        "Year": "2005",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2005.064402",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484410",
+        "Title":
+          "Impact of behavioral contingency management intervention on coping behaviors and PTSD symptom reduction in cocaine-addicted homeless",
+        "Author": "Lester (2007)",
+        "Year": "2007",
+        "Link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jts.20239",
+        "Context": "Boston, MA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.0588801, 42.3600825], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34487102",
+        "Title":
+          "Housing outcomes and predictors of success: the role of hospitalization in street outreach",
+        "Author": "Lettner (2016)",
+        "Year": "2016",
+        "Link": "https://onlinelibrary.wiley.com/doi/full/10.1111/jpm.12287",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476684",
+        "Title":
+          "The Effect of Advance Directive Completion on Hospital Care Among Chronically Homeless Persons: a Prospective Cohort Study",
+        "Author": "Leung (2017)",
+        "Year": "2017",
+        "Link": "https://link.springer.com/article/10.1007%2Fs11524-016-0105-2",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34487112",
+        "Title":
+          "Impact of Chronically Street Homeless Tenants in Congregate Supportive Housing",
+        "Author": "Levitt (2012)",
+        "Year": "2012",
+        "Link":
+          "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1939-0025.2012.01164.x",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031519",
+        "Title":
+          "Randomized trial of intensive housing placement and community transition services for episodic and recidivist homeless families.",
+        "Author": "Levitt (2013)",
+        "Year": "2013",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/24148053",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476690\nDUPLICATE",
+        "Title":
+          "Randomized Trial of Intensive Housing Placement and Community Transition Services for Episodic and Recidivist Homeless Families",
+        "Author": "Levitt (2013)",
+        "Year": "2013",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2013.301521",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34479827",
+        "Title":
+          "Impact of a New York City supportive housing program on Medicaid expenditure patterns among people with serious mental illness and chronic homelessness",
+        "Author": "Lim (2018)",
+        "Year": "2018",
+        "Link": "",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34487143",
+        "Title":
+          "Impact of a Supportive Housing Program on Housing Stability and Sexually Transmitted Infections Among Young Adults in New York City Who Were Aging Out of Foster Care",
+        "Author": "Lim (2017)",
+        "Year": "2017",
+        "Link": "<Go to ISI>://WOS:000406750700006",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484429",
+        "Title":
+          "Tenure in supportive housing for homeless persons with severe mental illness",
+        "Author": "Lipton (2000)",
+        "Year": "2000",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.51.4.479",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484443",
+        "Title":
+          "A group forgiveness intervention for adult male homeless individuals: Effects on forgiveness, rumination, and social connectedness",
+        "Author": "Louden-Gerber (2009)",
+        "Year": "2009",
+        "Link":
+          "https://search.proquest.com/openview/71d3a46864fa0dbc29dabc4d879016ed/1?pq-origsite=gscholar&cbl=18750&diss=y",
+        "Context": "San Antonio, TX",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-98.49362819999999, 29.4241219],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484448",
+        "Title":
+          "Faith and homelessness: Examining the influence of the faithbased component of a transitional housing program on the attitudes and behaviors of homeless men",
+        "Author": "Luffborough (2018)",
+        "Year": "2017",
+        "Link":
+          "ttps://search.proquest.com/openview/85872ac41a840e5ea6d90744f6d67e5f/1?pq-origsite=gscholar&cbl=18750&diss=y",
+        "Context": "San Diego, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-117.1610838, 32.715738], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484451",
+        "Title":
+          "Homelessness and reentry: A multisite outcome evaluation of Washington State's reentry housing program for high risk offenders",
+        "Author": "Lutze (2014)",
+        "Year": "2014",
+        "Link": "http://journals.sagepub.com/doi/abs/10.1177/0093854813510164",
+        "Context": "King County, WA\nSpokane, WA\nClark County, BC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-121.9836029, 47.5480339], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484453",
+        "Title":
+          "Improving youth mental health through family-based prevention in family homeless shelters",
+        "Author": "Lynn (2014)",
+        "Year": "2014",
+        "Link":
+          "https://www.sciencedirect.com/science/article/pii/S0190740914002096",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476717",
+        "Title":
+          "Housing First Is Associated with Reduced Use of Emergency Medical Services",
+        "Author": "Mackelprang (2014)",
+        "Year": "2014",
+        "Link":
+          "https://www.tandfonline.com/doi/abs/10.3109/10903127.2014.916020",
+        "Context": "Seattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.3320708, 47.6062095], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031524",
+        "Title":
+          "Social services case-management for long-term mental disorders: a randomised controlled trial.",
+        "Author": "Marshall (1995)",
+        "Year": "1995",
+        "Link": "https://doi.org/10.1016/S0140-6736(95)90399-2",
+        "Context": "Oxford, Oxfordshire",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-1.2577263, 51.7520209], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031526",
+        "Title":
+          "Duration of homeless spells among severely mentally ill individuals: A survival analysis",
+        "Author": "McBride (1998)",
+        "Year": "1998",
+        "Link":
+          "http://onlinelibrary.wiley.com/doi/10.1002/(SICI)1520-6629(199809)26:5%3C473::AID-JCOP6%3E3.0.CO;2-S/abstract",
+        "Context": "Philadelphia, PA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-75.1652215, 39.9525839], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476773",
+        "Title":
+          "A Relationship-Based Intervention to Improve Social Connectedness in Street-Involved Youth: A Pilot Study",
+        "Author": "McCay (2011)",
+        "Year": "2011",
+        "Link":
+          "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1744-6171.2011.00301.x",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34479987",
+        "Title":
+          "Resource-limited, collaborative pilot intervention for chronically homeless, alcohol-dependent frequent emergency department users",
+        "Author": "McCormack (2013)",
+        "Year": "2013",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2013.301373",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484502",
+        "Title":
+          "Evaluation of the effectiveness of the therapeutic community model as a novel treatment in the homeless",
+        "Author": "McCracken (2003)",
+        "Year": "2003",
+        "Link":
+          "https://www.researchgate.net/publication/35227876_Evaluation_of_the_effectiveness_of_the_therapeutic_community_model_as_a_novel_treatment_in_the_homeless_by_Laura_Margaret_McCracken",
+        "Context": "Dallas, TX",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-96.79698789999999, 32.7766642],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484512",
+        "Title":
+          "A Randomized Controlled Trial of Integrated Versus Parallel Housing Services for Homeless Adults With Severe Mental Illness",
+        "Author": "McHugo (2004)",
+        "Year": "2004",
+        "Link": "http://dx.doi.org/10.1093/oxfordjournals.schbul.a007146",
+        "Context": "Washington, DC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-77.0368707, 38.9071923], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480044",
+        "Title":
+          "A family intervention to reduce sexual risk behavior, substance use, and delinquency among newly homeless youth",
+        "Author": "Milburn (2012)",
+        "Year": "2012",
+        "Link":
+          "https://www.jahonline.org/article/S1054-139X(11)00284-9/fulltext",
+        "Context": "Los Angeles, CA\nSan Bernardino, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.1965739, 34.0556691], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031529",
+        "Title":
+          "Sufficient conditions for effective treatment of substance abusing homeless persons.",
+        "Author": "Milby (1996)",
+        "Year": "1996",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8957141",
+        "Context": "Birmingham, AL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-86.80248999999999, 33.5206608],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480050",
+        "Title":
+          "To house or not to house: the effects of providing housing to homeless substance abusers in treatment",
+        "Author": "Milby (2005)",
+        "Year": "2005",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2004.039743",
+        "Context": "Birmingham, AL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-86.80248999999999, 33.5206608],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031537",
+        "Title":
+          "Effects of sustained abstinence among treated substance-abusing homeless persons on housing and employment.",
+        "Author": "Milby (2010)",
+        "Year": "2010",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/19833998",
+        "Context": "Birmingham, AL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-86.80248999999999, 33.5206608],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480120",
+        "Title":
+          "Treating homeless clients with severe mental illness and substance use disorders: costs and outcomes",
+        "Author": "Morse (2006)",
+        "Year": "2006",
+        "Link": "https://link.springer.com/article/10.1007%2Fs10597-006-9050-y",
+        "Context": "St Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031544",
+        "Title":
+          "An experimental comparison of three types of case management for homeless mentally ill persons.",
+        "Author": "Morse (1997)",
+        "Year": "1997",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/9090733",
+        "Context": "St Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031553",
+        "Title":
+          "Long-term outcomes of disability benefits in US veterans with posttraumatic stress disorder.",
+        "Author": "Murdoch (2011)",
+        "Year": "2011",
+        "Link":
+          "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/1107426",
+        "Context": "Minneapolis, VA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-93.20504419999999, 44.9025428],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480170",
+        "Title":
+          "Life changes among homeless persons with mental illness: a longitudinal study of housing first and usual treatment",
+        "Author": "Nelson (2015)",
+        "Year": "2015",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201400201",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482858",
+        "Title":
+          "Moving Ahead: Evaluation of a Work-Skills Training Program for Homeless Adults",
+        "Author": "Nelson (2012)",
+        "Year": "2012",
+        "Link": "https://link.springer.com/article/10.1007%2Fs10597-012-9490-5",
+        "Context": "New England",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-70.8226541, 43.9653889], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34874209",
+        "Title":
+          "Deinstitutionalization revisited: a 5-year follow-up of a randomized clinical trial of hospital-based rehabilitation versus specialized assertive intervention (OPUS) versus standard treatment for patients with first-episode schizophrenia spectrum disorders",
+        "Author": "Nordentoft (2010)",
+        "Year": "2010",
+        "Link":
+          "https://www.cambridge.org/core/article/deinstitutionalization-revisited-a-5year-followup-of-a-randomized-clinical-trial-of-hospitalbased-rehabilitation-versus-specialized-assertive-intervention-opus-versus-standard-treatment-for-patients-with-firstepisode-schizophrenia-spectrum-disorders/CD9570EA29CDB0A7B0C2BED6F44AE67D",
+        "Context": "Copenhagen",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [12.5683372, 55.6760968], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482891",
+        "Title":
+          "Impact of an intervention for recently released homeless offenders on self-reported re-arrest at 6 and 12 months",
+        "Author": "Nyamathi (2017)",
+        "Year": "2017",
+        "Link":
+          "https://www.tandfonline.com/doi/abs/10.1080/10550887.2016.1147796",
+        "Context": "Los Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.2436849, 34.0522342], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482890",
+        "Title":
+          "Nursing Case Management, Peer Coaching, and Hepatitis A and B Vaccine Completion Among Homeless Men Recently Released on Parole: Randomized Clinical",
+        "Author": "Nyamathi (2015)",
+        "Year": "2015",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4418035/",
+        "Context": "Los Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.2436849, 34.0522342], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34482892",
+        "Title":
+          "Impact of Community-Based Programs on Incarceration Outcomes Among Gay and Bisexual Stimulant-Using Homeless Adults",
+        "Author": "Nyamathi (2016)",
+        "Year": "2016",
+        "Link": "https://link.springer.com/article/10.1007%2Fs10597-014-9792-x",
+        "Context": "Los Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.2436849, 34.0522342], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476974",
+        "Title":
+          "Population-Tailored Care for Homeless Veterans and Acute Care Use, Cost, and Satisfaction: A Prospective Quasi-Experimental Trial",
+        "Author": "O'Toole (2018)",
+        "Year": "2018",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5814153/",
+        "Context": "San Francisco, CA\nProvidence, RI",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.4128343, 41.8239891], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477959",
+        "Title":
+          "How did a Housing First intervention improve health and social outcomes among homeless adults with mental illness in Toronto? Two-year outcomes from a randomised trial",
+        "Author": "O'Campo (2016)",
+        "Year": "2016",
+        "Link": "http://dx.doi.org/10.1136/bmjopen-2015-010581",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476957",
+        "Title":
+          "Integrating smoking cessation and alcohol use treatment in homeless populations: study protocol for a randomized controlled trial",
+        "Author": "Ojo-Fati (2015)",
+        "Year": "2015",
+        "Link":
+          "https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-015-0858-z",
+        "Context": "Minneapolis-St. Paul (Twin Cities), MN",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-93.2650108, 44.977753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34476959",
+        "Title":
+          "Motivational interviewing to enhance nicotine patch treatment for smoking cessation among homeless smokers: a randomized controlled trial",
+        "Author": "Okuyemi (2013)",
+        "Year": "2013",
+        "Link": "https://onlinelibrary.wiley.com/doi/full/10.1111/add.12140",
+        "Context": "Minneapolis-St. Paul (Twin Cities), MN",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-93.2650108, 44.977753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031561",
+        "Title":
+          "Applying the chronic care model to homeless veterans: effect of a population approach to primary care on utilization and clinical outcomes.",
+        "Author": "O'Toole (2010)",
+        "Year": "2010",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/20966377",
+        "Context": "Valley, Providence, RI",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-71.43438909999999, 41.8293588],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484672",
+        "Title":
+          "Impact of maternal health literacy training on the behaviors of women who have been homeless",
+        "Author": "Oves (2014)",
+        "Year": "2014",
+        "Link":
+          "https://www.questia.com/library/journal/1P3-3500586091/impact-of-maternal-health-literacy-training-on-the",
+        "Context": "Georgia",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-82.9000751, 32.1656221], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031564",
+        "Title":
+          "Barriers to care and service needs among chronically homeless persons in a housing first program.",
+        "Author": "Parker (2012)",
+        "Year": "2012",
+        "Link":
+          "https://journals.lww.com/professionalcasemanagementjournal/Abstract/2012/11000/Barriers_to_Care_and_Service_Needs_Among.7.aspx",
+        "Context": "South Carolina",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-81.1637245, 33.836081], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484705",
+        "Title":
+          "Housing First improves subjective quality of life among homeless adults with mental illness: 12-month findings from a randomized controlled trial in Vancouver, British Columbia",
+        "Author": "Patterson (2013)",
+        "Year": "2013",
+        "Link": "https://link.springer.com/article/10.1007%2Fs00127-013-0719-6",
+        "Context": "Vancouver, BC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-123.1207375, 49.2827291], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480368",
+        "Title":
+          "Trajectories of recovery among homeless adults with mental illness who participated in a randomised controlled trial of Housing First: a longitudinal, narrative analysis",
+        "Author": "Patterson (2013)",
+        "Year": "2013",
+        "Link": "http://dx.doi.org/10.1136/bmjopen-2013-003442",
+        "Context": "Vancouver, BC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-123.1207375, 49.2827291], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483000",
+        "Title":
+          "Short-Term Effects of a Brief Motivational Intervention to Reduce Alcohol and Drug Risk among Homeless Adolescents",
+        "Author": "Peterson (2006)",
+        "Year": "2006",
+        "Link": "http://dx.doi.org/10.1037/0893-164X.20.3.254",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031567",
+        "Title":
+          "A major Canadian initiative to address mental health and homelessness.",
+        "Author": "Piat (2009)",
+        "Year": "2009",
+        "Link":
+          "http://www.ingentaconnect.com/content/mcgill/cjnr/2009/00000041/00000002/art00006",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478004",
+        "Title":
+          "Effects of Housing First on Employment and Income of Homeless Individuals: results of a Randomized Trial",
+        "Author": "Poremski (2016)",
+        "Year": "2016",
+        "Link":
+          "http://onlinelibrary.wiley.com/o/cochrane/clcentral/articles/500/CN-01214500/frame.html",
+        "Context":
+          "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC\nMoncton, NB",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-64.7860888, 46.08340450000001],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478014",
+        "Title":
+          "Contingency managment reduces substance use and increases healhy behaviours among homeless, out-of-treatment MSM",
+        "Author": "Reback (2009)",
+        "Year": "2009",
+        "Link": "https://doi.org/10.1016/j.jsat.2010.06.007",
+        "Context": "West Hollywood, Los Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.3617443, 34.0900091], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484794",
+        "Title":
+          "Outcomes of a brief sexual health intervention for homeless youth",
+        "Author": "Rew (2007)",
+        "Year": "2007",
+        "Link": "http://journals.sagepub.com/doi/abs/10.1177/1359105307080617",
+        "Context": "Austin, TX",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-97.7430608, 30.267153], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484797",
+        "Title":
+          "Housing first improves adherence to antipsychotic medication among formerly homeless adults with schizophrenia: Results of a randomized controlled trial",
+        "Author": "Rezansoff (2017)",
+        "Year": "2017",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/27665002",
+        "Context": "Downtown Eastside, Vancouver, BC, Canada",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-123.0919496, 49.284004], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483176",
+        "Title":
+          "Emergency department utilisation among formerly homeless adults with mental disorders after one year of Housing First interventions: a randomised controlled trial",
+        "Author": "Russolillo (2014)",
+        "Year": "2014",
+        "Link": "https://doi.org/10.1080/14616718.2014.884881",
+        "Context": "Vancouver, BC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-123.1207375, 49.2827291], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34488201",
+        "Title":
+          "Effect of a Housing and Case Management Program on Emergency Department Visits and Hospitalizations Among Chronically Ill Homeless Adults A Randomized Trial",
+        "Author": "Sadowski (2009)",
+        "Year": "2009",
+        "Link": "https://jamanetwork.com/journals/jama/fullarticle/183842",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484881",
+        "Title":
+          "Prospective trial of customized adherence enhancement plus long-acting injectable antipsychotic medication in homeless or recently homeless individuals with schizophrenia or schizoaffective disorder",
+        "Author": "Sajatovic (2013)",
+        "Year": "2013",
+        "Link":
+          "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4129952/pdf/nihms609920.pdf",
+        "Context": "Cleveland, OH",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-81.6943605, 41.49932], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34488228",
+        "Title":
+          "Time-Limited Case Management for Homeless Mothers With Mental Health Problems: Effects on Maternal Mental Health",
+        "Author": "Samuels (2015)",
+        "Year": "2015",
+        "Link": "https://www.journals.uchicago.edu/doi/abs/10.1086/684122",
+        "Context": "New York",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031536",
+        "Title":
+          "Randomized Trial of Onsite Versus Referral Primary Medical Care for Veterans in Addictions Treatment",
+        "Author": "Saxon, (2006)",
+        "Year": "2006",
+        "Link":
+          "https://journals.lww.com/lww-medicalcare/Abstract/2006/04000/Randomized_Trial_of_Onsite_Versus_Referral_Primary.7.aspx",
+        "Context": "Seattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.3320708, 47.6062095], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031538",
+        "Title":
+          "Satisfaction with residence and with life: when homeless mentally ill persons are housed",
+        "Author": "Schutt, (1997)",
+        "Year": "1997",
+        "Link":
+          "https://www.sciencedirect.com/science/article/pii/S0149718996000493",
+        "Context": "Boston, MA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.0588801, 42.3600825], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478065",
+        "Title":
+          "The effect of housing interventions on neuropsychological functioning among homeless persons with mental illness",
+        "Author": "Seidman (2003)",
+        "Year": "2003",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.54.6.905",
+        "Context": "Boston, MA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-71.0588801, 42.3600825], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480762",
+        "Title": "Smoking cessation among sheltered homeless: a pilot",
+        "Author": "Shelley (2010)",
+        "Year": "2010",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2882631/",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031540",
+        "Title":
+          "Housing Outcomes for Homeless Adults With Mental Illness: Results From the Second-Round McKinney Program",
+        "Author": "Shern, (1997)",
+        "Year": "1997",
+        "Link":
+          "https://www.researchgate.net/profile/Richard_Hough/publication/14187310_Housing_Outcomes_for_Homeless_Adults_With_Mental_Illness_Results_from_the_Second-Round_McKinney_Program/links/00b495193ed3124926000000/Housing-Outcomes-for-Homeless-Adults-With-Mental-Illness-Results-from-the-Second-Round-McKinney-Program.pdf",
+        "Context":
+          "Baltimore, MD\nBoston, MA\nSan Diego, CA\nNew York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483252",
+        "Title":
+          "Serving street-dwelling individuals with psychiatric disabilities: Outcomes of a psychiatric rehabilitation clinical trial",
+        "Author": "Shern (2000)",
+        "Year": "2000",
+        "Link":
+          "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1446423/pdf/11111259.pdf",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477578",
+        "Title":
+          "Longitudinal Impact of a Family Critical Time Intervention on Children in High-Risk Families Experiencing Homelessness: a Randomized Trial",
+        "Author": "Longitudinal Impact... (2015)",
+        "Year": "2015",
+        "Link":
+          "https://onlinelibrary.wiley.com/doi/full/10.1007/s10464-015-9742-y",
+        "Context": "Westchester County, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-73.7948516, 41.1220194], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34484949",
+        "Title":
+          "Tenant Outcomes in Supported Housing and Community Residences in New York City",
+        "Author": "Siegel (2006)",
+        "Year": "2006",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/full/10.1176/ps.2006.57.7.982",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34480828",
+        "Title":
+          "A comparison of three interventions for homeless youth evidencing substance use disorders: results of a randomized clinical trial",
+        "Author": "Slesnick (2015)",
+        "Year": "2015",
+        "Link":
+          "https://www.journalofsubstanceabusetreatment.com/article/S0740-5472(15)00040-9/pdf",
+        "Context": "Columbus, OH",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-82.99879419999999, 39.9611755],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031552",
+        "Title":
+          "The Community Reinforcement Approach With Homeless A1cohol-Dependent Individuals",
+        "Author": "Smith, (1998)",
+        "Year": "1998",
+        "Link": "http://psycnet.apa.org/record/1998-02631-011",
+        "Context": "Albuquerque, NM",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-106.650422, 35.0843859], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031554",
+        "Title":
+          "The Efficacy of a Consumer Case Management Team: 2-Year Outcomes of a Randomized Trial",
+        "Author": "Solomon, (1995)",
+        "Year": "1995",
+        "Link": "https://link.springer.com/article/10.1007/BF02518754",
+        "Context": "Colorado",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-105.7820674, 39.5500507], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031555",
+        "Title":
+          "Case Management For Substance Abusers With Hiv/aids: A Randomized Clinical Trial",
+        "Author": "Sorensen, (2009)",
+        "Year": "2003",
+        "Link": "http://www.tandfonline.com/doi/abs/10.1081/ADA-120018843",
+        "Context": "San Francisco, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.4194155, 37.7749295], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031557",
+        "Title":
+          "Case management and vouchers improve uptake of methadone treatment programmes",
+        "Author": "Sorensen (2006)",
+        "Year": "2006",
+        "Link": "http://ebmh.bmj.com/content/9/3/81#BIBL",
+        "Context": "Mission District, San Francisco, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.4147977, 37.7598648], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031559",
+        "Title":
+          "Paths and Impacts in the Progressive Independence Model: A Homelessness and Substance Abuse Intervention in Chicago",
+        "Author": "Sosin, (2008)",
+        "Year": "1996",
+        "Link": "http://www.tandfonline.com/doi/abs/10.1300/J069v14n04_01",
+        "Context": "Chicago, IL",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-87.6297982, 41.8781136], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34485000",
+        "Title":
+          "A pilot study of the impact of housing first-supported housing for intensive users of medical hospitalization and sobering services",
+        "Author": "Srebnik (2013)",
+        "Year": "2013",
+        "Link":
+          "https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2012.300867",
+        "Context": "Seattle, WA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-122.3320708, 47.6062095], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34485004",
+        "Title":
+          "Cost and effectiveness of full service partnerships: Assertive community treatment of severe mental illness following the California Mental Health Services Act",
+        "Author": "Starks (2012)",
+        "Year": "2012",
+        "Link":
+          "https://search.proquest.com/openview/d96719d7ac7e98de0b8ad58a75c6a1fd/1?pq-origsite=gscholar&cbl=18750&diss=y",
+        "Context": "Los Angeles County, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-118.2436596, 34.0522265], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34478112",
+        "Title":
+          "Housing First for long-term shelter dwellers with psychiatric disabilities in a suburban county: a four-year study of housing access and retention",
+        "Author": "Stefancic (2007)",
+        "Year": "2007",
+        "Link":
+          "http://onlinelibrary.wiley.com/o/cochrane/clcentral/articles/354/CN-00618354/frame.html",
+        "Context": "Westchester County, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-73.7948516, 41.1220194], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477313",
+        "Title":
+          "The effectiveness of a Housing First adaptation for ethnic minority groups: findings of a pragmatic randomized controlled trial",
+        "Author": "Stergiopoulos (2016)",
+        "Year": "2016",
+        "Link":
+          "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-016-3768-4",
+        "Context": "Toronto, ON",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-79.3831843, 43.653226], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031573",
+        "Title":
+          "Effect of Scattered-Site housing using rent supplements and intensive case management on housing stability among homeless adults with mental illness",
+        "Author": "Stergiopoulos, (2015)",
+        "Year": "2015",
+        "Link":
+          "https://jamanetwork.com/journals/jama/fullarticle/2174029?linkid=12694817",
+        "Context": "Vancouver, BC\nWinnipeg, MB\nToronto, ON\nMontreal, QC",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-97.13435229999999, 49.8890008],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031574",
+        "Title":
+          "Preventing Recurrent Homelessness among Mentally 111 Men: A \"Critical Time\" Intervention after Discharge from a Shelter",
+        "Author": "Susser, (1997)",
+        "Year": "1997",
+        "Link":
+          "http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.87.2.256",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031576",
+        "Title":
+          "Does Assertive Community Outreach Improve Social Support? Results From the Lambeth Study of Early-Episode Psychosis",
+        "Author": "Tempier (2012)",
+        "Year": "2012",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.20110013",
+        "Context": "Lambeth, London",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-0.1230681, 51.4571477], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477378",
+        "Title":
+          "Evaluation of the Housing First program in patients with severe mental disorders in France: study protocol for a randomized controlled trial",
+        "Author": "Tinland (2013)",
+        "Year": "2013",
+        "Link": "https://doi.org/10.1186/1745-6215-14-309",
+        "Context": "Lille\nMarseille\nParis\nToulouse",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [3.057256, 50.62925], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477389",
+        "Title":
+          "The impact of critical time intervention in reducing psychiatric rehospitalization after hospital discharge",
+        "Author": "Tomita (2012)",
+        "Year": "2012",
+        "Link":
+          "https://ps.psychiatryonline.org/doi/abs/10.1176/appi.ps.201100468",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34477390",
+        "Title":
+          "Mediation Analysis of Critical Time Intervention for Persons Living With Serious Mental Illnesses: Assessing the Role of Family Relations in Reducing Psychiatric Rehospitalization",
+        "Author": "Tomita (2014)",
+        "Year": "2014",
+        "Link": "http://dx.doi.org/10.1037/prj0000015",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34031583",
+        "Title":
+          "Evaluating an Intervention for Homeless Persons: Results of a Field Experiment",
+        "Author": "Toro, (1997)",
+        "Year": "1997",
+        "Link": "http://dx.doi.org/10.1037/0022-006X.65.3.476",
+        "Context": "Buffalo, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-78.8783689, 42.88644679999999],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483400",
+        "Title":
+          "A Multisite Comparison of Supported Housing for Chronically Homeless Adults: 'Housing First' Versus 'Residential Treatment First'",
+        "Author": "Tsai (2010)",
+        "Year": "2010",
+        "Link": "http://psycnet.apa.org/doiLanding?doi=10.1037%2Fa0020460",
+        "Context":
+          "Chattanooga, TN\nChicago, IL\nColumbus, OH\nDenver, CO\nFort Lauderdale, FL\nLos Angeles, CA\nMartinez, CA\nNew York, NY\nPhiladelphia, PA\nPortland, OR\nSan Francisco, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-85.3096801, 35.0456297], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34483407",
+        "Title":
+          "Housing First, Consumer Choice, and Harm Reduction for Homeless Individuals With a Dual Diagnosis",
+        "Author": "Tsemberis (2004)",
+        "Year": "2004",
+        "Link":
+          "https://ajph.aphapublications.org/doi/pdf/10.2105/AJPH.94.4.651",
+        "Context": "New York City, NY",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-74.0059728, 40.7127753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34481982",
+        "Title":
+          "Critical Time Intervention for Homeless People Making the Transition to Community Living: A Randomized Controlled Trial",
+        "Author": "de Vet (2017)",
+        "Year": "2017",
+        "Link": "https://doi.org/10.1002/ajcp.12150",
+        "Context": "Arnhem‐Nijmegen",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [5.885833, 51.914722], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34485137",
+        "Title":
+          "The effectiveness of the advocacy and benefits homeless programs in reducing homelessness or at-risk for homelessness",
+        "Author": "Wade (2009)",
+        "Year": "2009",
+        "Link":
+          "https://search.proquest.com/openview/070bde86c7996fa70564226225fd5d98/1?pq-origsite=gscholar&cbl=18750&diss=y",
+        "Context": "Minneapolis, MN",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-93.2650108, 44.977753], "type": "Point" }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34032907",
+        "Title":
+          "Cost effectiveness evaluation of Three approaches to case management for homeless mentally ill clients",
+        "Author": "Wolff, (1997)",
+        "Year": "1997",
+        "Link": "https://doi.org/10.1176/ajp.154.3.341",
+        "Context": "St. Louis, MO",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": {
+        "coordinates": [-90.19940419999999, 38.6270025],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": "34032908",
+        "Title":
+          "Randomized Trial of the Effects of Housing Assistance on the Health and Risk Behaviors of Homeless and Unstably Housed People Living with HIV",
+        "Author": "Wolitski, (2010)",
+        "Year": "2010",
+        "Link": "https://link.springer.com/article/10.1007/s10461-009-9643-x",
+        "Context": "Baltimore, MD\nChicago, IL\nLos Angeles, CA",
+        "Type": "Impact Evaluation"
+      },
+      "geometry": { "coordinates": [-76.6121893, 39.2903848], "type": "Point" }
+    }
+  ]
+}
