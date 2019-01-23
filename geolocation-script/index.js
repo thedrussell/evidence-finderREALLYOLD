@@ -1,98 +1,82 @@
-var GoogleSpreadsheet = require("google-spreadsheet");
-var creds = require("./client_secret.json");
-var fs = require("fs");
-var async = require("async");
-var asyncLoop = require("node-async-loop");
+var config = require('./config.json');
 
-// Geocoder shenanigans
-var NodeGeocoder = require("node-geocoder");
-var options = {
-  provider: "google",
-  httpAdapter: "https", // Default
-  apiKey: "AIzaSyCj4tEvicG3r5cwkwdOZCx6Od1KnRAyprs", // for Mapquest, OpenCage, Google Premier
-  formatter: null // 'gpx', 'string', ...
-};
-var geocoder = NodeGeocoder(options);
+var https = require('https');
+var fs = require('fs');
+var Papa = require('papaparse');
+var _ = require('lodash');
 
-// Create a document object using the ID of the spreadsheet - obtained from its URL.
-var doc = new GoogleSpreadsheet("1WsZx6lmkCcBMd08FuY-jmKVtRI-0mTsM7C1P69uLbD0");
+var rawJSON;
 
-// Authenticate with the Google Spreadsheets API.
-doc.useServiceAccountAuth(creds, function(err) {
-  // Get all of the rows from the spreadsheet.
+https.get(config.googleSpreadsheetCsvUrl, function(response) {
+    console.log("data received.");
 
-  console.log("authenticated?");
+    Papa.parse(response, {
+      header: false,
+      delimiter: ",",
+      complete: function(parsed) {
+        console.log("raw data parsed.");
 
-  doc.getRows(1, function(err, rows) {
-    let entries = {
-      type: "FeatureCollection",
-      features: []
-    };
-    // async function suite here
-    function geoCodeIt(entry) {
-      return new Promise(resolve => {
-        geocoder.geocode(entry.studycontext, function(err, res) {
-          if (err) {
-            resolve(err);
-          }
-          if (res) {
-            if (res[0].latitude) {
-              console.log(res);
-              entry.latitude = res[0].latitude;
-              entry.longitude = res[0].longitude;
-            }
-            resolve(entry);
-          }
-        });
-      });
-    }
-
-    function geoJsonIt(entry) {
-      return new Promise(resolve => {
-        entry.geoJson = {
-          type: "Feature",
-          properties: {
-            ID: entry.uniqueid,
-            Title: entry.title,
-            Author: entry.author,
-            Year: entry.year,
-            Link: entry.publicationlink,
-            Context: entry.studycontext,
-            Type: entry.studytype
-          },
-          geometry: {
-            coordinates: [entry.longitude, entry.latitude],
-            type: "Point"
-          }
-        };
-
-        resolve(entry);
-      });
-    }
-    function pushToEntries(entry) {
-      return new Promise(resolve => {
-        entries.features.push(entry.geoJson);
-        resolve(entry);
-      });
-    }
-
-    async function delayedLog(item) {
-      if (item.studycontext) {
-        await geoCodeIt(item);
-        await geoJsonIt(item);
-        await pushToEntries(item);
+        // rawJSON = parsed.data.slice();
+        cleanUpRows(parsed.data);
       }
-    }
-
-    async function processArray(array) {
-      for (const item of array) {
-        await delayedLog(item);
-      }
-      console.log(entries);
-      fs.writeFile("./data/geojson.geojson", JSON.stringify(entries), "utf-8");
-      console.log("done");
-    }
-
-    processArray(rows);
+    });
+  })
+  .on('error', function(err) { // Handle errors
+    console.error(err);
   });
-});
+
+function cleanUpRows(json) {
+  console.log("cleaning up rows...");
+
+  // remove first and second row
+  json.splice(0, 2);
+
+  // remove fourth row
+  json.splice(1, 1);
+
+  Papa.parse(Papa.unparse(json), {
+      header: true,
+      complete: function(response) {
+        console.log("rows cleaned.");
+
+        processRows(response.data);
+      }
+  });
+}
+
+function processRows(rows) {
+  console.log("processing rows...");
+
+  const json = rows.map(function(row) {
+    return {
+      id: row.ID,
+      title: row.Title,
+      year: row.Year,
+      url: row.URL,
+      types: getTypes(row),
+    }
+  });
+
+  console.log("writing to file...", json[0]);
+
+  fs.writeFile(__dirname + '/data/data.json', JSON.stringify(json), function(err) {
+    if (err) {
+      console.error(err);
+    }
+    else {
+      //file written successfully
+      console.log("done!");
+    }
+  })
+}
+
+function getTypes(row) {
+  const types = config.studyTypes.reduce(function(typesArr, studyType) {
+    const hasStudyType = !_.isEmpty(row[studyType]);
+    hasStudyType && types.push(studyType);
+
+    return typesArr;
+  }, []);
+
+  return types;
+}

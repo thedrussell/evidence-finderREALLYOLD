@@ -1,0 +1,17 @@
+{
+  "googleSpreadsheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSymCm8BrCMF34UGfFGzNpvtSc-PXh_gtOQY_wgUsl-u8xGS_z29DezBTK2OFR7cU2qyB33cQkRK81h/pub?gid=0&single=true&output=csv",
+  "studyTypes": [
+    "Systematic review",
+    "Review of review",
+    "Randomised control trial",
+    "Cohort",
+    "Natural experiment",
+    "Regression discontinuity design",
+    "Interrupted time series",
+    "Instrumental variables",
+    "Propensity score matching",
+    "Other forms of matching",
+    "Difference - in - difference without matching",
+    "Before versus after (pre & post)"
+  ]
+}
