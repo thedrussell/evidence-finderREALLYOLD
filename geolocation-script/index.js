@@ -21,6 +21,8 @@ var doc = new GoogleSpreadsheet("1WsZx6lmkCcBMd08FuY-jmKVtRI-0mTsM7C1P69uLbD0");
 doc.useServiceAccountAuth(creds, function(err) {
   // Get all of the rows from the spreadsheet.
 
+  console.log("authenticated?");
+
   doc.getRows(1, function(err, rows) {
     let entries = {
       type: "FeatureCollection",
