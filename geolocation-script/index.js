@@ -18,7 +18,8 @@ https.get(config.googleSpreadsheetCsvUrl, function(response) {
       delimiter: ",",
       complete: function(parsed) {
         console.log("raw data parsed.");
-        cleanUpRows(parsed.data).then(rows => processRows(rows));
+        cleanUpRows(parsed.data)
+          .then(rows => getFeatures(rows));
       }
     });
   })
@@ -31,8 +32,8 @@ function cleanUpRows(json) {
 
   const promise = new Promise(resolve => {
 
-    json.splice(0, 2)   // remove first and second row
-        .splice(1, 1);  // remove fourth row
+    json.splice(0, 2);   // remove first and second row
+    json.splice(1, 1);   // remove fourth row
 
     Papa.parse(Papa.unparse(json), {
         header: true,
@@ -47,12 +48,11 @@ function cleanUpRows(json) {
   return promise;
 }
 
-function processRows(rows) {
-  console.log("processing rows...");
+function getFeatures(rows) {
+  console.log("getting features...");
 
   const entries = rows.map(function(row) {
-    return {
-      /* CORE */
+    const properties = {
       id: row.ID,
       type: row.MAP,
       title: row.Title,
@@ -66,15 +66,28 @@ function processRows(rows) {
       design: getColumnGroup(row, config.studyTypes),
       populationGroups: getColumnGroup(row, config.populationGroups),
     }
+
+    return {
+      type: "Feature",
+      properties: properties
+    }
   });
 
-  getGeolocations(entries).then((json) => saveData(json));
+  getGeometries(entries)//.slice(0,5))
+    .then((features) => {
+      const json = {
+        type: "FeatureCollection",
+        features: features
+      }
+
+      saveData(json)
+    });
 }
 
 function saveData(json) {
   console.log("writing to file...");
 
-  fs.writeFile(__dirname + '/../data/data.json', JSON.stringify(json), function(err) {
+  fs.writeFile(__dirname + '/../data/geo.json', JSON.stringify(json), function(err) {
     if(err) {
       console.error(err);
     }
@@ -95,15 +108,15 @@ function getColumnGroup(row, keys) {
   return group;
 }
 
-function getGeolocations(entries) {
-  const geolocationPromises = entries.map((entry) => getGeolocation(entry));
+function getGeometries(entries) {
+  const geolocationPromises = entries.map((entry) => getGeometry(entry));
 
   return Promise.all(geolocationPromises);
 }
 
-function getGeolocation(entry) {
+function getGeometry(entry) {
 
-  const { locations } = entry;
+  const { locations } = entry.properties;
 
   const locationArr = locations.split(";").filter(n => n).map(n => n.trim());
   const hasLocations = !_.isEmpty(locationArr);
@@ -115,13 +128,23 @@ function getGeolocation(entry) {
 
       Promise.all(queryPromises)
         .then((results) => {
-          entry.locations = results.map(result => result);
+          const hasMultipleGeometries = results.length > 1;
+
+          if(hasMultipleGeometries) {
+            entry.geometry = {
+              type: "GeometryCollection",
+              geometries: results.map(result => storeGeometry(result[0]))
+            };
+          }
+          else {
+            entry.geometry = storeGeometry(results[0][0]);
+          }
           resolve(entry);
         })
         .catch(error => console.error(error));
     }
     else {
-      entry.locations = [];
+      entry.geometry = null;
       resolve(entry);
     }
   });
@@ -135,6 +158,15 @@ function queryAPI(location) {
     .then(response => resolve(response.json.results))
     .catch(error => reject(error))
   });
+}
+
+function storeGeometry(result) {
+  const { lat, lng } = result.geometry.location;
+
+  return {
+    type: "Point",
+    coordinates: [lat, lng]
+  }
 }
 
 // function getAddresses(city, country, region) {
