@@ -87,7 +87,7 @@ function getFeatures(rows) {
 function saveData(json) {
   console.log("writing to file...");
 
-  fs.writeFile(__dirname + '/../data/geo.json', JSON.stringify(json), function(err) {
+  fs.writeFile(__dirname + '/../map/src/data/geo.json', JSON.stringify(json), function(err) {
     if(err) {
       console.error(err);
     }
