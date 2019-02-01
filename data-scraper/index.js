@@ -124,21 +124,11 @@ function getGeometry(entry) {
   const promise = new Promise((resolve, reject) => {
 
     if(hasLocations) {
-      const queryPromises = locationArr.map((location) => queryAPI(location));
+      const queryPromises = locationArr.map((location) => geocode(location));
 
       Promise.all(queryPromises)
         .then((results) => {
-          const hasMultipleGeometries = results.length > 1;
-
-          if(hasMultipleGeometries) {
-            entry.geometry = {
-              type: "GeometryCollection",
-              geometries: results.map(result => storeGeometry(result[0]))
-            };
-          }
-          else {
-            entry.geometry = storeGeometry(results[0][0]);
-          }
+          entry.geometry = getGeometryPoints(results)
           resolve(entry);
         })
         .catch(error => console.error(error));
@@ -152,7 +142,7 @@ function getGeometry(entry) {
   return promise;
 }
 
-function queryAPI(location) {
+function geocode(location) {
   return new Promise((resolve, reject) => {
     googleMapsClient.geocode({ address: location }).asPromise()
     .then(response => resolve(response.json.results))
@@ -160,7 +150,21 @@ function queryAPI(location) {
   });
 }
 
-function storeGeometry(result) {
+function getGeometryPoints(results) {
+  const hasMultipleGeometries = results.length > 1;
+
+  if(hasMultipleGeometries) {
+    return {
+      type: "GeometryCollection",
+      geometries: results.map(result => getGeometryPoint(result[0]))
+    };
+  }
+  else {
+    return getGeometryPoint(results[0][0]);
+  }
+}
+
+function getGeometryPoint(result) {
   const { lat, lng } = result.geometry.location;
 
   return {
