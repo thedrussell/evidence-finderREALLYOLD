@@ -5,7 +5,10 @@ var fs = require('fs');
 var Papa = require('papaparse');
 var _ = require('lodash');
 
-var rawJSON;
+const googleMapsClient = require('@google/maps').createClient({
+  key: process.env.GOOGLE_MAPS_API_KEY,
+  Promise: Promise
+});
 
 https.get(config.googleSpreadsheetCsvUrl, function(response) {
     console.log("data received.");
@@ -15,68 +18,203 @@ https.get(config.googleSpreadsheetCsvUrl, function(response) {
       delimiter: ",",
       complete: function(parsed) {
         console.log("raw data parsed.");
-
-        // rawJSON = parsed.data.slice();
-        cleanUpRows(parsed.data);
+        cleanUpRows(parsed.data).then(rows => processRows(rows));
       }
     });
   })
-  .on('error', function(err) { // Handle errors
+  .on('error', function(err) {
     console.error(err);
   });
 
 function cleanUpRows(json) {
   console.log("cleaning up rows...");
 
-  // remove first and second row
-  json.splice(0, 2);
+  const promise = new Promise(resolve => {
 
-  // remove fourth row
-  json.splice(1, 1);
+    json.splice(0, 2)   // remove first and second row
+        .splice(1, 1);  // remove fourth row
 
-  Papa.parse(Papa.unparse(json), {
-      header: true,
-      complete: function(response) {
-        console.log("rows cleaned.");
+    Papa.parse(Papa.unparse(json), {
+        header: true,
+        complete: function(response) {
+          console.log("rows cleaned.");
+          resolve(response.data);
+        }
+    });
 
-        processRows(response.data);
-      }
   });
+
+  return promise;
 }
 
 function processRows(rows) {
   console.log("processing rows...");
 
-  const json = rows.map(function(row) {
+  const entries = rows.map(function(row) {
     return {
+      /* CORE */
       id: row.ID,
+      type: row.MAP,
       title: row.Title,
       year: row.Year,
       url: row.URL,
-      types: getTypes(row),
+
+      /* CONTEXT */
+      locations: row.Locations,
+
+      /* FILTER INFORMATION */
+      design: getColumnGroup(row, config.studyTypes),
+      populationGroups: getColumnGroup(row, config.populationGroups),
     }
   });
 
-  console.log("writing to file...", json[0]);
+  getGeolocations(entries).then((json) => saveData(json));
+}
 
-  fs.writeFile(__dirname + '/data/data.json', JSON.stringify(json), function(err) {
-    if (err) {
+function saveData(json) {
+  console.log("writing to file...");
+
+  fs.writeFile(__dirname + '/../data/data.json', JSON.stringify(json), function(err) {
+    if(err) {
       console.error(err);
     }
     else {
-      //file written successfully
-      console.log("done!");
+      console.log("file written successfully!");
     }
-  })
+  });
 }
 
-function getTypes(row) {
-  const types = config.studyTypes.reduce(function(typesArr, studyType) {
-    const hasStudyType = !_.isEmpty(row[studyType]);
-    hasStudyType && types.push(studyType);
+function getColumnGroup(row, keys) {
+  const group = keys.reduce(function(arr, key) {
+    const hasValue = !_.isEmpty(row[key]);
+    hasValue && arr.push(key);
 
-    return typesArr;
+    return arr;
   }, []);
 
-  return types;
+  return group;
 }
+
+function getGeolocations(entries) {
+  const geolocationPromises = entries.map((entry) => getGeolocation(entry));
+
+  return Promise.all(geolocationPromises);
+}
+
+function getGeolocation(entry) {
+
+  const { locations } = entry;
+
+  const locationArr = locations.split(";").filter(n => n).map(n => n.trim());
+  const hasLocations = !_.isEmpty(locationArr);
+
+  const promise = new Promise((resolve, reject) => {
+
+    if(hasLocations) {
+      const queryPromises = locationArr.map((location) => queryAPI(location));
+
+      Promise.all(queryPromises)
+        .then((results) => {
+          entry.locations = results.map(result => result);
+          resolve(entry);
+        })
+        .catch(error => console.error(error));
+    }
+    else {
+      entry.locations = [];
+      resolve(entry);
+    }
+  });
+
+  return promise;
+}
+
+function queryAPI(location) {
+  return new Promise((resolve, reject) => {
+    googleMapsClient.geocode({ address: location }).asPromise()
+    .then(response => resolve(response.json.results))
+    .catch(error => reject(error))
+  });
+}
+
+// function getAddresses(city, country, region) {
+//   let addresses = [];
+//
+//   const cities = city.split(";").filter(n => n);
+//   const countries = country.split(";").filter(n => n);
+//   const regions = region.split(";").filter(n => n);
+//
+//   const hasManyCities = cities.length > 1;
+//   const hasManyCountries = countries.length > 1;
+//   const hasManyRegions = regions.length > 1;
+//
+//   if(hasManyCities) {
+//     cities.forEach((city) => {
+//       addresses.push(`${city}, ${countries[0]}`)
+//     });
+//
+//     return addresses;
+//   }
+//
+//   if(hasManyCountries) {
+//
+//   }
+
+
+  // if has city
+
+    // if has multiple cities
+
+      // for each
+
+        // city + first country
+        // return location
+
+    // else
+
+      // city + first country
+      // return location
+
+  // else if has country
+
+    // if has multiple countries
+
+      // for each
+
+        // country
+        // return location
+
+    // else
+
+      // country
+      // return location
+
+  // else if has region
+
+    // if has multiple regions
+
+      // for each
+
+        // region
+        // return location
+
+    // else
+
+      // region
+      // return location
+
+// }
+
+// ALL STUDY TYPES
+// "Systematic review",
+// "Review of review",
+// "Randomised control trial",
+// "Cohort",
+// "Natural experiment",
+// "Regression discontinuity design",
+// "Interrupted time series",
+// "Instrumental variables",
+// "Propensity score matching",
+// "Other forms of matching",
+// "Difference - in - difference without matching",
+// "Before versus after (pre & post)"
