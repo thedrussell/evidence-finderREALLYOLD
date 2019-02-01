@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MapGL, { Popup } from 'react-map-gl';
 import logo from './logo.svg';
 import './App.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const MAPBOX_TOKEN = "pk.eyJ1IjoicmMzIiwiYSI6ImNlTWkwODAifQ.Ekx8PkIebxZdaZxksxz2BA";
 
