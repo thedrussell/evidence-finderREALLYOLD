@@ -165,11 +165,11 @@ function getGeometryPoints(results) {
 }
 
 function getGeometryPoint(result) {
-  const { lat, lng } = result.geometry.location;
+  const { lng, lat } = result.geometry.location;
 
   return {
     type: "Point",
-    coordinates: [lat, lng]
+    coordinates: [lng, lat]
   }
 }
 

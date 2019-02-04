@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import MapGL from 'react-map-gl';
+import MapGL, { Popup } from 'react-map-gl';
 import isEmpty from 'lodash/isEmpty';
 import './App.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Feature from './Feature';
 import Filters from './Filters';
+import { fromJS } from 'immutable';
+
+import { defaultMapStyle } from './data/map-style';
 const geoJSON = require('./data/geo.json');
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
@@ -14,7 +17,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      mapStyle: "mapbox://styles/rc3/cjffxvy9wb3ou2snutp645m00/",
+      mapStyle: defaultMapStyle,//"mapbox://styles/rc3/cjffxvy9wb3ou2snutp645m00/",
       viewport: {
         latitude: 38.88,
         longitude: -98,
@@ -23,8 +26,11 @@ class App extends Component {
         bearing: 0,
         pitch: 0
       },
-      data: geoJSON
+      selectedFeature: null
     };
+
+    this.handleMapClicked = this._handleMapClicked.bind(this);
+    this.handlePopupClose = this._handlePopupClose.bind(this);
 
     this.onViewportChange = this._onViewportChange.bind(this);
     this.updateData = this._updateData.bind(this);
@@ -32,26 +38,37 @@ class App extends Component {
   _onViewportChange(viewport) {
     this.setState({ viewport });
   }
-  _getFeatures() {
-    const { data } = this.state;
-    const { zoom } = this.state.viewport;
+  _getPopup(selectedFeature) {
+    const { geometry, properties } = selectedFeature;
 
-    return data.features.map((feature, i) => {
-      const hasGeometry = !isEmpty(feature.geometry);
+    const { title, url, year } = properties;
+    const { coordinates } = geometry;
 
-      const featureComp = hasGeometry &&
-        <Feature
-          key={i}
-          properties={feature.properties}
-          geometry={feature.geometry}
-          zoom={zoom}
-        />;
+    const hasUrl = !isEmpty(url);
 
-      return featureComp;
-    }).filter(n => n);
+    const content =
+      <div className="Popup-Content">
+        {year}<br/>
+        {hasUrl ? <a href={url} target="_blank">{title}</a> : {title}}
+      </div>
+
+    return (
+      <Popup
+        longitude={coordinates[0]}
+        latitude={coordinates[1]}
+        sortByDepth={true}
+        closeButton={true}
+        closeOnClick={true}
+        onClose={this.handlePopupClose}
+      >
+        {content}
+      </Popup>
+    );
   }
   render() {
-    const { viewport, mapStyle } = this.state;
+    const { viewport, mapStyle, selectedFeature } = this.state;
+    const showPopup = !isEmpty(selectedFeature);
+
     return (
       <div className="App">
         <MapGL
@@ -61,21 +78,48 @@ class App extends Component {
           mapStyle={mapStyle}
           mapboxApiAccessToken={MAPBOX_TOKEN}
           onViewportChange={this.onViewportChange}
+          onClick={this.handleMapClicked}
         >
-          {this._getFeatures()}
+          {showPopup && this._getPopup(selectedFeature)}
         </MapGL>
+
         <Filters
-          
+          updateData={this.updateData}
         />
       </div>
     );
   }
+  componentDidMount() {
+    this._loadData();
+  }
+
+  _handleMapClicked(event) {
+    const { features } = event;
+    const selectedFeature = !isEmpty(features) && features.find(f => f.source === 'studiesByLocation');
+
+    this.setState({ selectedFeature: selectedFeature });
+  }
+  _handlePopupClose() {
+    this.setState({ selectedFeature: null });
+  }
+  _loadData() {
+    const mapStyle = defaultMapStyle
+      // Add geojson source to map
+      .setIn(['sources', 'studiesByLocation'], fromJS({ type: 'geojson', data: geoJSON }))
+
+    this.setState({ mapStyle, data: geoJSON });
+  }
   _updateData(filters) {
-    const { data } = this.state;
+    const { mapStyle, data } = this.state;
 
     // filter data
 
-    this.setState({ data });
+    // update
+    // const newMapStyle = mapStyle
+    //   // Add geojson source to map
+    //   .setIn(['sources', 'studiesByLocation'], fromJS({ type: 'geojson', data: geoJSON }))
+
+    // this.setState({ mapStyle: newMapStyle, data });
   }
 }
 
