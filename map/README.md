@@ -1,3 +1,18 @@
+# Evidence Finder: Map
+
+A React app that loads a geoJSON of Evidence Finder data and displays an filterable, interactive map using MapboxGL.
+
+### Installation
+
+
+### Development
+
+
+### Deployment
+
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
