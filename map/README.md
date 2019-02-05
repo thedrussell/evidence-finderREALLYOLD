@@ -1,30 +1,42 @@
 # Evidence Finder: Map
 A React app that loads a geoJSON of Evidence Finder data and displays a filterable, interactive map using MapboxGL.
 
-### Installation
+## Setup
+1. Make sure [NodeJS](https://nodejs.org/) is installed.
+2. Open terminal and navigate to this folder.
+3. If you've just cloned this repository, install all code related packages with:
+```
+npm install
+```
+4. Get a [Mapbox Access Token](https://account.mapbox.com/access-tokens/).
 
-1. Get a [Mapbox Access Token](https://account.mapbox.com/access-tokens/)
-2. Create a file called `.env` in this folder and store the key like this:
+## Development
+1. Create a file called `.env.local` in this folder and store the Mapbox token like this:
 ```
 REACT_APP_MAPBOX_TOKEN=secret-key-goes-here
 ```
-3. Open terminal and run
+2. Open terminal, navigate to this folder and run:
 ```
 npm start
 ```
 
-### Development
+NOTE: If you edit the map style in Mapbox Studio, export it and copy all files and folders into `/src/data`.
 
-##### Mapbox Studio Style
-If you edit the style in Mapbox Studio, export it and copy contents into `/src/data`.
-
-### Deployment
-Open terminal and run the following command to build and deploy the map to GitHub pages:
+## Deployment
+1. Install [Now](https://zeit.co/now) (you need the CLI, it comes with their desktop app as well)
+2. Login into your Now account via the desktop app or the CLI
+3. In terminal, store your Mapbox token as a Now secret:
+```
+now secrets add chi-evidence-finder-mapbox-token "secret-key-goes-here"
+```
+4. Run the following command to build and deploy the map to a Now project `chi-evidence-finder`.
 ```
 npm run deploy
 ```
 
+
 ---
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

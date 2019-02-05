@@ -2,10 +2,10 @@
 
 Download Evidence Finder data from a spreadsheet, fetch geolocation coordinates and format the data into a `geojson`.
 
-## Installation
+## Setup
 This project assumes that [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1gt0gMD9VvnYd4UKA1v5KA1O0wl1Orxr-beCTjpud6uU/) is published as a CSV and structured as of February X, 2019.
 
-1. Install [NodeJS](https://nodejs.org/) if necessary.
+1. Make sure [NodeJS](https://nodejs.org/) is installed.
 2. Open terminal and navigate to this folder.
 3. If you've just cloned this repository, install all code related packages with:
 ```
@@ -17,7 +17,7 @@ npm install
 GOOGLE_MAPS_API_KEY=secret-key-goes-here
 ```
 
-## Running
+## Development
 Open terminal, navigate to this folder and run:
 ```
 npm start

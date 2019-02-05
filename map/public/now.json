@@ -1,0 +1,7 @@
+{
+  "name": "chi-evidence-finder",
+  "version": 2,
+  "env": {
+    "REACT_APP_MAPBOX_TOKEN": "@chi-evidence-finder-mapbox-token"
+  }
+}

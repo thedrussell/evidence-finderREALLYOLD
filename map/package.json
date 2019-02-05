@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "immutable": "^4.0.0-rc.12",
+    "now": "^13.1.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-map-gl": "^4.0.9",
@@ -13,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && now ./build"
   },
   "eslintConfig": {
     "extends": "react-app"
