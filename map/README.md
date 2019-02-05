@@ -1,5 +1,4 @@
 # Evidence Finder: Map
-
 A React app that loads a geoJSON of Evidence Finder data and displays an filterable, interactive map using MapboxGL.
 
 ### Installation
