@@ -4,12 +4,26 @@ A React app that loads a geoJSON of Evidence Finder data and displays an filtera
 
 ### Installation
 
+1. Get a [Mapbox API key](#)
+2. Create a file called `.env` in this folder and store the key like this:
+```
+REACT_APP_MAPBOX_TOKEN=secret-key-goes-here
+```
+3. Open terminal and run
+```
+npm start
+```
 
 ### Development
 
+##### Mapbox Studio Style
+If you edit the style in Mapbox Studio, export it and copy contents into `/src/data`.
 
 ### Deployment
-
+Open terminal and run the following command to build and deploy the map to GitHub pages:
+```
+npm run deploy
+```
 
 ---
 
