@@ -1,9 +1,9 @@
 # Evidence Finder: Map
-A React app that loads a geoJSON of Evidence Finder data and displays an filterable, interactive map using MapboxGL.
+A React app that loads a geoJSON of Evidence Finder data and displays a filterable, interactive map using MapboxGL.
 
 ### Installation
 
-1. Get a [Mapbox API key](#)
+1. Get a [Mapbox Access Token](https://account.mapbox.com/access-tokens/)
 2. Create a file called `.env` in this folder and store the key like this:
 ```
 REACT_APP_MAPBOX_TOKEN=secret-key-goes-here
