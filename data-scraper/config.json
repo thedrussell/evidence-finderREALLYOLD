@@ -1,0 +1,30 @@
+{
+  "googleSpreadsheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSymCm8BrCMF34UGfFGzNpvtSc-PXh_gtOQY_wgUsl-u8xGS_z29DezBTK2OFR7cU2qyB33cQkRK81h/pub?gid=0&single=true&output=csv",
+  "studyTypes": [
+    "Systematic review",
+    "Review of review"
+  ],
+  "prevention": [
+    "Primary",
+    "Secondary",
+    "Tertiary"
+  ],
+  "populationGroups": [
+    "Young People",
+    "Families with Children",
+    "Women and Girls",
+    "Elderly",
+    "Discharge from Health Facilities",
+    "People with/History of Mental Illness",
+    "People with Complex Needs/Dual Diagnosis",
+    "Veterans/Ex-services",
+    "People with Alcohol/Drug Issues",
+    "LGBT",
+    "Survivors of Domestic Violence/Abuse",
+    "People with Disabilities",
+    "Migrants",
+    "Ex-prisoners",
+    "HIV Patients",
+    "Indigenous Peoples"
+  ]
+}
