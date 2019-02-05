@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,5 @@
     "lodash": "^4.17.11",
     "node-async-loop": "^1.2.2",
     "papaparse": "^4.6.3"
-  },
-  "scripts": {
-    "start": "node -r dotenv/config index.js"
   }
 }
