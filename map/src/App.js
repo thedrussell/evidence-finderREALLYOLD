@@ -3,7 +3,6 @@ import MapGL, { Popup } from 'react-map-gl';
 import isEmpty from 'lodash/isEmpty';
 import './App.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import Feature from './Feature';
 import Filters from './Filters';
 import { fromJS } from 'immutable';
 
@@ -49,7 +48,7 @@ class App extends Component {
     const content =
       <div className="Popup-Content">
         {year}<br/>
-        {hasUrl ? <a href={url} target="_blank">{title}</a> : {title}}
+        {hasUrl ? <a href={url} target="_blank"rel=" noopener noreferrer">{title}</a> : {title}}
       </div>
 
     return (
@@ -110,7 +109,7 @@ class App extends Component {
     this.setState({ mapStyle, data: geoJSON });
   }
   _updateData(filters) {
-    const { mapStyle, data } = this.state;
+    // const { mapStyle, data } = this.state;
 
     // filter data
 
