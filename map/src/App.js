@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import MapGL, { Popup } from 'react-map-gl';
 import isEmpty from 'lodash/isEmpty';
+import groupBy from 'lodash/groupBy';
 import './App.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Filters from './Filters';
 import { fromJS } from 'immutable';
 
-import { defaultMapStyle } from './data/map-style';
+import { defaultMapStyle, dataLayers } from './data/map-style';
 const geoJSON = require('./data/geo.json');
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
@@ -48,7 +49,7 @@ class App extends Component {
     const content =
       <div className="Popup-Content">
         {year}<br/>
-        {hasUrl ? <a href={url} target="_blank"rel=" noopener noreferrer">{title}</a> : {title}}
+        {hasUrl ? <a href={url} target="_blank"rel=" noopener noreferrer">{title}</a> : <span>{title}</span>}
       </div>
 
     return (
@@ -89,24 +90,37 @@ class App extends Component {
     );
   }
   componentDidMount() {
-    this._loadData();
+    this._loadData(geoJSON);
   }
 
   _handleMapClicked(event) {
     const { features } = event;
-    const selectedFeature = !isEmpty(features) && features.find(f => f.source === 'studiesByLocation');
+    const selectedFeature = !isEmpty(features) && features.find(f => f.source === 'implementationStudiesByLocation' || f.source === 'effectivenessStudiesByLocation');
 
     this.setState({ selectedFeature: selectedFeature });
   }
   _handlePopupClose() {
     this.setState({ selectedFeature: null });
   }
-  _loadData() {
-    const mapStyle = defaultMapStyle
-      // Add geojson source to map
-      .setIn(['sources', 'studiesByLocation'], fromJS({ type: 'geojson', data: geoJSON }))
+  _loadData(geoJSON) {
+    let typeGroups = groupBy(geoJSON.features, item => item.properties.type);
+    Object.keys(typeGroups).forEach((key) => isEmpty(key) && delete typeGroups[key]);
 
-    this.setState({ mapStyle, data: geoJSON });
+    let implementationFeatureCollection = Object.assign({}, geoJSON);
+    implementationFeatureCollection.features = typeGroups['Implementation Map'];
+
+    let effectivenessFeatureCollection = Object.assign({}, geoJSON);
+    effectivenessFeatureCollection.features = typeGroups['Effectiveness Map'];
+
+    let mapStyle = defaultMapStyle
+      .setIn(['sources', 'implementationStudiesByLocation'], fromJS({ type: 'geojson', data: implementationFeatureCollection }))
+      .set('layers', defaultMapStyle.get('layers').push(dataLayers.implementation))
+
+    mapStyle = mapStyle
+      .setIn(['sources', 'effectivenessStudiesByLocation'], fromJS({ type: 'geojson', data: effectivenessFeatureCollection }))
+      .set('layers', mapStyle.get('layers').push(dataLayers.effectiveness))
+
+    this.setState({ mapStyle });
   }
   _updateData(filters) {
     // const { mapStyle, data } = this.state;

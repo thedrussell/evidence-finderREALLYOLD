@@ -41,14 +41,14 @@
             "ios": "3.7.0"
         }
     },
-    "center": [-0.10556007165428127, 51.50969635610258],
-    "zoom": 10.01970397600799,
+    "center": [-0.1020752684459012, 5.684341886080802e-14],
+    "zoom": 0,
     "bearing": 0,
     "pitch": 0,
     "light": {"anchor": "viewport"},
     "sources": {
         "composite": {
-            "url": "mapbox://mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v7,rc3.cjgo6g9lp0jyu34or088wvrk5-3800o",
+            "url": "mapbox://mapbox.mapbox-streets-v7,mapbox.mapbox-terrain-v2,rc3.cjgo6g9lp0jyu34or088wvrk5-3800o",
             "type": "vector"
         }
     },
@@ -4006,25 +4006,11 @@
                 "text-color": "#6b6b6b",
                 "text-halo-blur": 0
             }
-        },
-        {
-            "id": "data",
-            "type": "symbol",
-            "source": "studiesByLocation",
-            "layout": {
-                "icon-image": "marker-15",
-                "icon-allow-overlap": {
-                    "base": 1,
-                    "stops": [[0, true], [22, true]]
-                },
-                "icon-size": {"base": 1, "stops": [[0, 1], [18, 3]]}
-            },
-            "paint": {}
         }
     ],
     "created": "2018-03-31T22:19:23.594Z",
     "id": "cjffxvy9wb3ou2snutp645m00",
-    "modified": "2019-02-04T17:20:26.194Z",
+    "modified": "2019-02-06T16:38:00.108Z",
     "owner": "rc3",
     "visibility": "private",
     "draft": false
