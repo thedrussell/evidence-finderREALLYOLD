@@ -20,7 +20,7 @@ REACT_APP_MAPBOX_TOKEN=secret-key-goes-here
 npm start
 ```
 
-NOTE: If you edit the map style in Mapbox Studio, export it and copy all files and folders into `/src/data`.
+NOTE: If you edit the map style in Mapbox Studio, export it and copy all files and folders into `/src/data/style`.
 
 ## Deployment
 1. Install [Now](https://zeit.co/now) (you need the CLI, it comes with their desktop app as well)
