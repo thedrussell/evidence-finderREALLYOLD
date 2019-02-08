@@ -34,6 +34,8 @@ class App extends Component {
 
     this.onViewportChange = this._onViewportChange.bind(this);
     this.updateData = this._updateData.bind(this);
+
+    this.popupTimeout = null;
   }
   _onViewportChange(viewport) {
     this.setState({ viewport });
@@ -41,15 +43,26 @@ class App extends Component {
   _getPopup(selectedFeature) {
     const { geometry, properties } = selectedFeature;
 
-    const { title, url, year } = properties;
+    const { type, title, url, year, authors, design } = properties;
     const { coordinates } = geometry;
 
+    const designArr = JSON.parse(design);
+
     const hasUrl = !isEmpty(url);
+    const hasDesign = !isEmpty(designArr);
+
+    const stringifiedDesign = hasDesign && `, ${designArr.join(', ')}`;
 
     const content =
       <div className="Popup-Content">
-        {year}<br/>
-        {hasUrl ? <a href={url} target="_blank"rel=" noopener noreferrer">{title}</a> : <span>{title}</span>}
+        <h2>{type}{stringifiedDesign}</h2>
+        <h1>
+          {hasUrl ? <a href={url} target="_blank"rel=" noopener noreferrer">{title}</a> : title}
+        </h1>
+        <h3>
+          <b>{year}</b><br/>
+          {authors}
+        </h3>
       </div>
 
     return (
@@ -111,10 +124,10 @@ class App extends Component {
     Object.keys(typeGroups).forEach((key) => isEmpty(key) && delete typeGroups[key]);
 
     let implementationFeatureCollection = Object.assign({}, geoJSON);
-    implementationFeatureCollection.features = typeGroups['Implementation Map'];
+    implementationFeatureCollection.features = typeGroups['Implementation study'];
 
     let effectivenessFeatureCollection = Object.assign({}, geoJSON);
-    effectivenessFeatureCollection.features = typeGroups['Effectiveness Map'];
+    effectivenessFeatureCollection.features = typeGroups['Effectiveness study'];
 
     let mapStyle = defaultMapStyle
       .setIn(['sources', 'implementationStudiesByLocation'], fromJS({ type: 'geojson', data: implementationFeatureCollection }))
