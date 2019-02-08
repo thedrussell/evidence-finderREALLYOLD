@@ -19,9 +19,9 @@ class App extends Component {
     this.state = {
       mapStyle: defaultMapStyle,//"mapbox://styles/rc3/cjffxvy9wb3ou2snutp645m00/",
       viewport: {
-        latitude: 38.88,
-        longitude: -98,
-        zoom: 3,
+        latitude: 52,
+        longitude: 0,
+        zoom: 4,
         minZoom: 2,
         bearing: 0,
         pitch: 0
