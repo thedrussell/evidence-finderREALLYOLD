@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MapGL, { Popup } from 'react-map-gl';
+import MapGL, { Popup, NavigationControl } from 'react-map-gl';
 import isEmpty from 'lodash/isEmpty';
 import groupBy from 'lodash/groupBy';
 import './App.css';
@@ -94,6 +94,12 @@ class App extends Component {
           onClick={this.handleMapClicked}
         >
           {showPopup && this._getPopup(selectedFeature)}
+          <div className="NavigationControl">
+            <NavigationControl
+              onViewportChange={this.onViewportChange}
+              showCompass={false}
+            />
+          </div>
         </MapGL>
 
         <Filters
