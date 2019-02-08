@@ -60,7 +60,7 @@ function getFeatures(rows) {
       url: row.URL,
 
       /* CONTEXT */
-      locations: row.Locations,
+      locations: row.Locations.split(";").map(n => n.trim()).filter(n => n),
 
       /* FILTER INFORMATION */
       design: getColumnGroup(row, config.studyTypes),
@@ -73,7 +73,7 @@ function getFeatures(rows) {
     }
   });
 
-  getGeometries(entries)//.slice(0,5))
+  getGeometries(entries)
     .then((features) => {
       const json = {
         type: "FeatureCollection",
@@ -115,23 +115,23 @@ function getGeometries(entries) {
 }
 
 function getGeometry(entry) {
-
   const { locations } = entry.properties;
-
-  const locationArr = locations.split(";").filter(n => n).map(n => n.trim());
-  const hasLocations = !_.isEmpty(locationArr);
+  const hasLocations = !_.isEmpty(locations);
 
   const promise = new Promise((resolve, reject) => {
 
     if(hasLocations) {
-      const queryPromises = locationArr.map((location) => geocode(location));
+      const queryPromises = locations.map((location) => geocode(location).catch(loc => geocode(loc).catch(l => geocode(l))));
 
       Promise.all(queryPromises)
         .then((results) => {
+          console.log(`${entry.properties.id} located.`)
           entry.geometry = getGeometryPoints(results)
           resolve(entry);
         })
-        .catch(error => console.error(error));
+        .catch((location) => {
+          console.log(`${entry.properties.id} has errors. (${location} failed to geocode)`);
+        });
     }
     else {
       entry.geometry = null;
@@ -143,10 +143,15 @@ function getGeometry(entry) {
 }
 
 function geocode(location) {
+  console.error(`Fetching ${location}...`);
+
   return new Promise((resolve, reject) => {
     googleMapsClient.geocode({ address: location }).asPromise()
     .then(response => resolve(response.json.results))
-    .catch(error => reject(error))
+    .catch(error => {
+      console.error(`Failed to geocode ${location}, will retry.`, error);
+      reject(location);
+    })
   });
 }
 
@@ -165,7 +170,13 @@ function getGeometryPoints(results) {
 }
 
 function getGeometryPoint(result) {
-  const { lng, lat } = result.geometry.location;
+  let { lng, lat } = result.geometry.location;
+  const isApproximate = result.geometry.location_type === "APPROXIMATE";
+
+  if(isApproximate) {
+    lng = disperseCoordinate(lng);
+    lat = disperseCoordinate(lat);
+  }
 
   return {
     type: "Point",
@@ -173,84 +184,10 @@ function getGeometryPoint(result) {
   }
 }
 
-// function getAddresses(city, country, region) {
-//   let addresses = [];
-//
-//   const cities = city.split(";").filter(n => n);
-//   const countries = country.split(";").filter(n => n);
-//   const regions = region.split(";").filter(n => n);
-//
-//   const hasManyCities = cities.length > 1;
-//   const hasManyCountries = countries.length > 1;
-//   const hasManyRegions = regions.length > 1;
-//
-//   if(hasManyCities) {
-//     cities.forEach((city) => {
-//       addresses.push(`${city}, ${countries[0]}`)
-//     });
-//
-//     return addresses;
-//   }
-//
-//   if(hasManyCountries) {
-//
-//   }
+function disperseCoordinate(coordinate) {
+  return coordinate + getRand(-0.1, 0.1);
+}
 
-
-  // if has city
-
-    // if has multiple cities
-
-      // for each
-
-        // city + first country
-        // return location
-
-    // else
-
-      // city + first country
-      // return location
-
-  // else if has country
-
-    // if has multiple countries
-
-      // for each
-
-        // country
-        // return location
-
-    // else
-
-      // country
-      // return location
-
-  // else if has region
-
-    // if has multiple regions
-
-      // for each
-
-        // region
-        // return location
-
-    // else
-
-      // region
-      // return location
-
-// }
-
-// ALL STUDY TYPES
-// "Systematic review",
-// "Review of review",
-// "Randomised control trial",
-// "Cohort",
-// "Natural experiment",
-// "Regression discontinuity design",
-// "Interrupted time series",
-// "Instrumental variables",
-// "Propensity score matching",
-// "Other forms of matching",
-// "Difference - in - difference without matching",
-// "Before versus after (pre & post)"
+function getRand(min, max) {
+  return Math.random() * (max - min) + min;
+}
