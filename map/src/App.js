@@ -100,7 +100,11 @@ class App extends Component {
     this.setState({ selectedFeature: selectedFeature });
   }
   _handlePopupClose() {
-    this.setState({ selectedFeature: null });
+    clearTimeout(this.popupTimeout);
+
+    this.popupTimeout = setTimeout(() => {
+      this.setState({ selectedFeature: null });
+    }, 100);
   }
   _loadData(geoJSON) {
     let typeGroups = groupBy(geoJSON.features, item => item.properties.type);
