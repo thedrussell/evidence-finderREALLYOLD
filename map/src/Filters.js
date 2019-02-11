@@ -90,9 +90,10 @@ class Filters extends Component {
     });
   }
   render() {
+    const { data } = this.props;
     const { filters } = this.state;
 
-    const header = filters.length > 0 ? `Filters (${filters.length})` : `Filters`;
+    const header = filters.length > 0 ? (data.features.length === 1 ? `${data.features.length} location` : `${data.features.length} locations`) : `Filters`;
 
     return (
       <div className="Filters">
