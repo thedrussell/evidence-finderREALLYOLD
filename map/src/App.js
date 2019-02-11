@@ -144,14 +144,21 @@ class App extends Component {
       const filteredFeatures = data.features.reduce((filteredFeaturesArr, feature) => {
         const { properties } = feature;
 
-        // check if matches ALL filters
-        // (for ANY filter: isIncluded = ... .includes(true))
+        // --------
+        // check if matches ALL filters <-- use if filters are dynamic
         const isExcluded = filters
           .map(filter => properties[filter.name].includes(filter.value))
           .includes(false);
 
-        // filter data
         !isExcluded && filteredFeaturesArr.push(feature);
+        // --------
+        // // check if matches ANY filter <-- use if filters are static
+        // const isIncluded = filters
+        //   .map(filter => properties[filter.name].includes(filter.value))
+        //   .includes(true);
+        //
+        // isIncluded && filteredFeaturesArr.push(feature);
+        // --------
 
         return filteredFeaturesArr;
       }, []);
