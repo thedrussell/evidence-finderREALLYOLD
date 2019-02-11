@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import groupBy from 'lodash/groupBy';
+import isEqual from 'lodash/isEqual';
 import './Filters.css';
 
 class Filters extends Component {
@@ -8,62 +8,86 @@ class Filters extends Component {
     super(props);
 
     this.state = {
-      filters: {}
+      filters: []
     };
 
     this.handleInputChange = this._handleInputChange.bind(this);
   }
   _getTypes() {
-    return this._getValueSet('type').map((value, i) =>
-      <label key={i}>
-        <input
-          name="type"
-          value={value}
-          type="checkbox"
-          onChange={this.handleInputChange}
-        />
-        {value}
-      </label>
-    );
+    const { filters } = this.state;
+
+    return this._getValueSet('type').map((value, i) => {
+      const isActive = filters.map(filter => filter.value === value).includes(true);
+      return (
+        <label key={i}>
+          <input
+            name="type"
+            value={value}
+            type="checkbox"
+            onChange={this.handleInputChange}
+            checked={isActive}
+          />
+          {value}
+        </label>
+      );
+    });
   }
   _getYears() {
-    return this._getValueSet('year').map((value, i) =>
-      <label key={i}>
-        <input
-          name="year"
-          value={value}
-          type="checkbox"
-          onChange={this.handleInputChange}
-        />
-        {value}
-      </label>
-    );
+    const { filters } = this.state;
+
+    return this._getValueSet('year').map((value, i) => {
+      const isActive = filters.map(filter => filter.value === value).includes(true);
+      return (
+        <label key={i}>
+          <input
+            name="year"
+            value={value}
+            type="checkbox"
+            onChange={this.handleInputChange}
+            checked={isActive}
+          />
+          {value}
+        </label>
+      );
+    });
   }
   _getInterventionCategories() {
-    return this._getValueSet('interventionCategories').map((value, i) =>
-      <label key={i}>
-        <input
-          name="interventionCategories"
-          value={value}
-          type="checkbox"
-          onChange={this.handleInputChange}
-        />
-        {value}
-      </label>
-    );
+    const { filters } = this.state;
+
+    return this._getValueSet('interventionCategories').map((value, i) => {
+      const isActive = filters.map(filter => filter.value === value).includes(true);
+      return (
+        <label key={i}>
+          <input
+            name="interventionCategories"
+            value={value}
+            type="checkbox"
+            onChange={this.handleInputChange}
+            checked={isActive}
+          />
+          {value}
+        </label>
+      );
+    });
   }
   _getPopulationGroups() {
-    return this._getValueSet('populationGroups').map((value, i) =>
-      <label key={i}>
-        <input
-          name="populationGroups"
-          value={value}
-          type="checkbox"
-          onChange={this.handleInputChange}
-        />
-        {value}
-      </label>
-    );
+    const { filters } = this.state;
+
+    return this._getValueSet('populationGroups').map((value, i) =>{
+      const isActive = filters.map(filter => filter.value === value).includes(true);
+      return (
+        <label key={i}>
+          <input
+            name="populationGroups"
+            value={value}
+            type="checkbox"
+            onChange={this.handleInputChange}
+            checked={isActive}
+          />
+          {value}
+        </label>
+      );
+    });
   }
   render() {
     return (
@@ -96,13 +120,17 @@ class Filters extends Component {
       </div>
     )
   }
-  componentDidUpdate() {
-    this.props.updateData(this.state.filters);
+  shouldComponentUpdate(nextProps, nextState) {
+    const hasUpdatedFilters = nextState.filters.length !== this.state.filters.length
+
+    hasUpdatedFilters && this.props.filterData(nextState.filters);
+
+    return true;
   }
   _getValueSet(key) {
-    const { features } = this.props.data;
+    const data = Object.assign({}, this.props.data);
 
-    const valueSet = features.reduce((found, feature) => {
+    const valueSet = data.features.reduce((found, feature) => {
       const values = feature.properties[key];
       const valueArr = Array.isArray(values) ? values : [values];
 
@@ -118,16 +146,18 @@ class Filters extends Component {
   }
   _handleInputChange(event) {
     const { name, value, checked } = event.target;
+    let filters = this.state.filters.slice();
 
-    let filters = Object.assign({}, this.state.filters);
+    const newFilter = {
+      name: name,
+      value: value
+    }
 
     if(checked) {
-      let array = filters[name] || [];
-      array.push(value);
-      filters[name] = array;
+      filters.push(newFilter);
     }
     if(!checked) {
-      filters[name] = filters[name].filter(filter => filter !== value);
+      filters = filters.filter(filter => !isEqual(filter, newFilter));
     }
 
     this.setState({ filters });
@@ -136,7 +166,7 @@ class Filters extends Component {
 
 Filters.propTypes = {
   data: PropTypes.object.isRequired,
-  updateData: PropTypes.func.isRequired
+  filterData: PropTypes.func.isRequired
 }
 
 export default Filters;
