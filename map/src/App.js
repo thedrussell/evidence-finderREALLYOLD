@@ -17,7 +17,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      mapStyle: defaultMapStyle,//"mapbox://styles/rc3/cjffxvy9wb3ou2snutp645m00/",
+      mapStyle: defaultMapStyle,
+      data: {},
       viewport: {
         latitude: 52,
         longitude: 0,
@@ -43,25 +44,28 @@ class App extends Component {
   _getPopup(selectedFeature) {
     const { geometry, properties } = selectedFeature;
 
-    const { type, title, url, year, authors, design } = properties;
+    const { type, title, url, year, authors, studyDesign } = properties;
     const { coordinates } = geometry;
 
-    const designArr = JSON.parse(design);
+    const authorsArr = JSON.parse(authors);
+    const hasAuthors = !isEmpty(authorsArr);
+    const stringifiedAuthors = hasAuthors && `${authorsArr.join('; ')}`;
+
+    const studyDesignArr = JSON.parse(studyDesign);
+    const hasStudyDesign = !isEmpty(studyDesignArr);
+    const stringifiedStudyDesign = hasStudyDesign && `, ${studyDesignArr.join(', ')}`;
 
     const hasUrl = !isEmpty(url);
-    const hasDesign = !isEmpty(designArr);
-
-    const stringifiedDesign = hasDesign && `, ${designArr.join(', ')}`;
 
     const content =
       <div className="Popup-Content">
-        <h2>{type}{stringifiedDesign}</h2>
+        <h2>{type}{stringifiedStudyDesign}</h2>
         <h1>
           {hasUrl ? <a href={url} target="_blank"rel=" noopener noreferrer">{title}</a> : title}
         </h1>
         <h3>
           <b>{year}</b><br/>
-          {authors}
+          {stringifiedAuthors}
         </h3>
       </div>
 
@@ -79,11 +83,15 @@ class App extends Component {
     );
   }
   render() {
-    const { viewport, mapStyle, selectedFeature } = this.state;
+    const { viewport, mapStyle, selectedFeature, data } = this.state;
     const showPopup = !isEmpty(selectedFeature);
 
     return (
       <div className="App">
+        <Filters
+          data={data}
+          updateData={this.updateData}
+        />
         <MapGL
           {...viewport}
           width="100%"
@@ -102,13 +110,10 @@ class App extends Component {
           </div>
         </MapGL>
 
-        <Filters
-          updateData={this.updateData}
-        />
       </div>
     );
   }
-  componentDidMount() {
+  componentWillMount() {
     this._loadData(geoJSON);
   }
 
@@ -126,26 +131,13 @@ class App extends Component {
     }, 100);
   }
   _loadData(geoJSON) {
-    let typeGroups = groupBy(geoJSON.features, item => item.properties.type);
-    Object.keys(typeGroups).forEach((key) => isEmpty(key) && delete typeGroups[key]);
-
-    let implementationFeatureCollection = Object.assign({}, geoJSON);
-    implementationFeatureCollection.features = typeGroups['Implementation study'];
-
-    let effectivenessFeatureCollection = Object.assign({}, geoJSON);
-    effectivenessFeatureCollection.features = typeGroups['Effectiveness study'];
-
-    let mapStyle = defaultMapStyle
-      .setIn(['sources', 'implementationStudiesByLocation'], fromJS({ type: 'geojson', data: implementationFeatureCollection }))
-      .set('layers', defaultMapStyle.get('layers').push(dataLayers.implementation))
-
-    mapStyle = mapStyle
-      .setIn(['sources', 'effectivenessStudiesByLocation'], fromJS({ type: 'geojson', data: effectivenessFeatureCollection }))
-      .set('layers', mapStyle.get('layers').push(dataLayers.effectiveness))
-
-    this.setState({ mapStyle });
+    this._setData(geoJSON);
   }
   _updateData(filters) {
+    const data = Object.assign({}, this.state.data);
+    // console.log(data);
+
+    console.log(filters);
     // const { mapStyle, data } = this.state;
 
     // filter data
@@ -156,6 +148,26 @@ class App extends Component {
     //   .setIn(['sources', 'studiesByLocation'], fromJS({ type: 'geojson', data: geoJSON }))
 
     // this.setState({ mapStyle: newMapStyle, data });
+  }
+  _setData(data) {
+    let typeGroups = groupBy(data.features, item => item.properties.type);
+    Object.keys(typeGroups).forEach((key) => isEmpty(key) && delete typeGroups[key]);
+
+    let implementationFeatureCollection = Object.assign({}, data);
+    implementationFeatureCollection.features = typeGroups['Implementation study'];
+
+    let effectivenessFeatureCollection = Object.assign({}, data);
+    effectivenessFeatureCollection.features = typeGroups['Effectiveness study'];
+
+    let mapStyle = defaultMapStyle
+      .setIn(['sources', 'implementationStudiesByLocation'], fromJS({ type: 'geojson', data: implementationFeatureCollection }))
+      .set('layers', defaultMapStyle.get('layers').push(dataLayers.implementation))
+
+    mapStyle = mapStyle
+      .setIn(['sources', 'effectivenessStudiesByLocation'], fromJS({ type: 'geojson', data: effectivenessFeatureCollection }))
+      .set('layers', mapStyle.get('layers').push(dataLayers.effectiveness))
+
+    this.setState({ mapStyle, data: data });
   }
 }
 

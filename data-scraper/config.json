@@ -1,13 +1,26 @@
 {
   "googleSpreadsheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSymCm8BrCMF34UGfFGzNpvtSc-PXh_gtOQY_wgUsl-u8xGS_z29DezBTK2OFR7cU2qyB33cQkRK81h/pub?gid=0&single=true&output=csv",
-  "studyTypes": [
+  "studyDesign": [
     "Systematic review",
     "Review of review"
   ],
-  "prevention": [
-    "Primary",
-    "Secondary",
-    "Tertiary"
+  "interventionCategories": [
+    "Accommodation",
+    "Accommodation with Support Services",
+    "Accommodation Based Support Services",
+    "Armed Forces",
+    "Arts, Sports and Culture",
+    "Communications and Campaigns",
+    "Crime and Justice",
+    "Crisis Services and Emergency Accommodation",
+    "Donations and Cash Transfers",
+    "Education, Skills and Employment",
+    "Health and Social Care - Mainstream",
+    "Health and Social Care - Specialist",
+    "Public Policy - Housing/Homelessness",
+    "Public Policy - Other",
+    "Social Relationships and Community",
+    "Technology"
   ],
   "populationGroups": [
     "Young People",

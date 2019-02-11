@@ -1,3 +1,95 @@
 .Filters {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  /* bottom: 26px; */
+  z-index: 999999999999;
+  background-color: white;
+  padding: 12px 14px;
+  width: 248px;
 
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.21)
+}
+
+.Filters h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+}
+
+.Filters h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 14px 0;
+}
+
+.Filters .Filter-Group {
+  border-top: #F2F2F2 solid 1px;
+}
+
+.Filters .Filter-Group .Filter-GroupList {
+  max-height: 98px;
+  overflow-y: scroll;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+}
+
+.Filters .Filter-Group .Filter-GroupList label {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  padding-left: 31px;
+  cursor: pointer;
+  padding-bottom: 6px;
+  user-select: none;
+}
+
+.Filters .Filter-Group .Filter-GroupList label input {
+  appearance: none;
+  outline: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0px 14px -3px -31px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.Filters .Filter-Group .Filter-GroupList label input:not(:checked) {
+  background: white;
+  border: 1px solid #979797 !important;
+}
+
+.Filters .Filter-Group .Filter-GroupList label input:checked {
+  background: #0076FF;
+  color: white;
+  position: relative;
+}
+
+.Filters .Filter-Group .Filter-GroupList label input:checked::after {
+  content: '';
+  position: absolute;
+  width: 1.5ex;
+  height: 0.7ex;
+  background: rgba(0, 0, 0, 0);
+  top: 0.7ex;
+  left: 0.7ex;
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

@@ -8,8 +8,8 @@
 
 .App .NavigationControl {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 26px;
+  right: 26px;
 }
 
 .App .mapboxgl-popup {
@@ -26,6 +26,7 @@
   font-weight: 500;
   line-height: 1.75;
   margin: 0.375rem 0 1rem 0;
+  letter-spacing: -0.05px;
 }
 
 .App .mapboxgl-popup .Popup-Content h1 a {

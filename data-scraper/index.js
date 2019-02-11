@@ -54,16 +54,16 @@ function getFeatures(rows) {
   const entries = rows.map(function(row) {
     const properties = {
       id: row.ID,
-      type: row.MAP,
-      title: row.Title,
-      year: row.Year,
-      url: row.URL,
-
-      /* CONTEXT */
+      type: row.MAP.replace("Map", "study"),
+      studyDesign: getColumnGroup(row, config.studyDesign),
+      title: row.Title.trim(),
+      year: row.Year.trim(),
+      url: row.URL.trim(),
+      authors: row.Authors.split(";").map(n => n.trim()).filter(n => n),
       locations: row.Locations.split(";").map(n => n.trim()).filter(n => n),
 
       /* FILTER INFORMATION */
-      design: getColumnGroup(row, config.studyTypes),
+      interventionCategories: getColumnGroup(row, config.interventionCategories),
       populationGroups: getColumnGroup(row, config.populationGroups),
     }
 
