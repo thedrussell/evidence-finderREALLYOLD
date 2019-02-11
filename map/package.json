@@ -15,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && now ./build"
+    "deploy": "npm run build && now ./build && now alias --local-config=./build/now.json"
   },
   "eslintConfig": {
     "extends": "react-app"

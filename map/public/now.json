@@ -1,6 +1,7 @@
 {
   "name": "chi-evidence-finder",
   "version": 2,
+  "alias": "chi-evidence-finder.now.sh",
   "env": {
     "REACT_APP_MAPBOX_TOKEN": "@chi-evidence-finder-mapbox-token"
   }
