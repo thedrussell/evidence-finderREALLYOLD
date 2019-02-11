@@ -58,6 +58,7 @@ function getFeatures(rows) {
       studyDesign: getColumnGroup(row, config.studyDesign),
       title: row.Title.trim(),
       year: row.Year.trim(),
+      yearGroup: !_.isEmpty(row.Year.trim()) ? getYearGroup(row.Year.trim()) : "",
       url: row.URL.trim(),
       authors: row.Authors.split(";").map(n => n.trim()).filter(n => n),
       locations: row.Locations.split(";").map(n => n.trim()).filter(n => n),
@@ -190,4 +191,11 @@ function disperseCoordinate(coordinate) {
 
 function getRand(min, max) {
   return Math.random() * (max - min) + min;
+}
+
+function getYearGroup(year) {
+  const fromYear = Math.floor(year/10 *2)/2 *10;
+  const toYear = fromYear + 4;
+
+  return `${fromYear} – ${toYear}`;
 }

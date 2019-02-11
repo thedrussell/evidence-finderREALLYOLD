@@ -32,15 +32,15 @@ class Filters extends Component {
       );
     });
   }
-  _getYears() {
+  _getYearGroups() {
     const { filters } = this.state;
 
-    return this._getValueSet('year').map((value, i) => {
+    return this._getValueSet('yearGroup').map((value, i) => {
       const isActive = filters.map(filter => filter.value === value).includes(true);
       return (
         <label key={i}>
           <input
-            name="year"
+            name="yearGroup"
             value={value}
             type="checkbox"
             onChange={this.handleInputChange}
@@ -90,9 +90,13 @@ class Filters extends Component {
     });
   }
   render() {
+    const { filters } = this.state;
+
+    const header = filters.length > 0 ? `Filters (${filters.length})` : `Filters`;
+
     return (
       <div className="Filters">
-        <h2>Filters</h2>
+        <h2>{header}</h2>
         <div className="Filter-Groups">
           <div className="Filter-Group">
             <h3>Type of study</h3>
@@ -103,7 +107,7 @@ class Filters extends Component {
           <div className="Filter-Group">
             <h3>Year of publication</h3>
             <div className="Filter-GroupList">
-              {this._getYears()}
+              {this._getYearGroups()}
             </div>
           </div>
           {/*
