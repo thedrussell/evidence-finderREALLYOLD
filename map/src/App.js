@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MapGL, { Popup, NavigationControl } from 'react-map-gl';
+import MapGL, { Popup, NavigationControl, FlyToInterpolator } from 'react-map-gl';
 import isEmpty from 'lodash/isEmpty';
 import groupBy from 'lodash/groupBy';
 import './App.css';
@@ -40,7 +40,7 @@ class App extends Component {
     this.popupTimeout = null;
   }
   _onViewportChange(viewport) {
-    this.setState({ viewport });
+    this.setState({ viewport: {...this.state.viewport, ...viewport}});
   }
   _getPopup(selectedFeature) {
     const { geometry, properties } = selectedFeature;
@@ -126,7 +126,20 @@ class App extends Component {
     const { features } = event;
     const selectedFeature = !isEmpty(features) && features.find(f => f.source === 'implementationStudiesByLocation' || f.source === 'effectivenessStudiesByLocation');
 
-    this.setState({ selectedFeature: selectedFeature });
+    const hasFeature = !isEmpty(selectedFeature);
+
+    if(hasFeature) {
+      this.setState({ selectedFeature: selectedFeature });
+      this._goToViewport(selectedFeature.geometry.coordinates)
+    }
+  }
+  _goToViewport(coordinates) {
+    this._onViewportChange({
+      longitude: coordinates[0],
+      latitude: coordinates[1],
+      transitionInterpolator: new FlyToInterpolator(),
+      transitionDuration: 200
+    })
   }
   _handlePopupClose() {
     clearTimeout(this.popupTimeout);
