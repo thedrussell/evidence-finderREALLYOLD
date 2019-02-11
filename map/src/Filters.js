@@ -93,28 +93,32 @@ class Filters extends Component {
     return (
       <div className="Filters">
         <h2>Filters</h2>
-        <div className="Filter-Group">
-          <h3>Type of study</h3>
-          <div className="Filter-GroupList">
-            {this._getTypes()}
+        <div className="Filter-Groups">
+          <div className="Filter-Group">
+            <h3>Type of study</h3>
+            <div className="Filter-GroupList">
+              {this._getTypes()}
+            </div>
           </div>
-        </div>
-        <div className="Filter-Group">
-          <h3>Year of publication</h3>
-          <div className="Filter-GroupList">
-            {this._getYears()}
+          <div className="Filter-Group">
+            <h3>Year of publication</h3>
+            <div className="Filter-GroupList">
+              {this._getYears()}
+            </div>
           </div>
-        </div>
-        <div className="Filter-Group">
-          <h3>Intervention categories</h3>
-          <div className="Filter-GroupList">
-            {this._getInterventionCategories()}
+          {/*
+          <div className="Filter-Group">
+            <h3>Intervention categories</h3>
+            <div className="Filter-GroupList">
+              {this._getInterventionCategories()}
+            </div>
           </div>
-        </div>
-        <div className="Filter-Group">
-          <h3>Population groups</h3>
-          <div className="Filter-GroupList">
-            {this._getPopulationGroups()}
+          */}
+          <div className="Filter-Group">
+            <h3>Population groups</h3>
+            <div className="Filter-GroupList">
+              {this._getPopulationGroups()}
+            </div>
           </div>
         </div>
       </div>

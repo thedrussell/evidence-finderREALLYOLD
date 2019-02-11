@@ -2,7 +2,7 @@
   position: absolute;
   top: 26px;
   left: 26px;
-  /* bottom: 26px; */
+  bottom: 26px;
   z-index: 999999999999;
   background-color: white;
   padding: 12px 14px;
@@ -32,18 +32,33 @@
   margin: 14px 0;
 }
 
-.Filters .Filter-Group {
+.Filters .Filter-Groups {
+  position: absolute;
+  top: 73px;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  overflow-y: scroll;
+
+  border-top: #F2F2F2 solid 1px;
+  border-bottom: #F2F2F2 solid 1px;
+}
+
+.Filters .Filter-Groups .Filter-Group {
+
+}
+.Filters .Filter-Groups .Filter-Group:not(:first-child) {
   border-top: #F2F2F2 solid 1px;
 }
 
-.Filters .Filter-Group .Filter-GroupList {
-  max-height: 98px;
-  overflow-y: scroll;
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList {
+  /* max-height: 98px; */
+  /* overflow-y: scroll; */
   padding-bottom: 14px;
   box-sizing: border-box;
 }
 
-.Filters .Filter-Group .Filter-GroupList label {
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList label {
   display: block;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -55,7 +70,7 @@
   user-select: none;
 }
 
-.Filters .Filter-Group .Filter-GroupList label input {
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList label input {
   appearance: none;
   outline: 0;
   width: 18px;
@@ -65,18 +80,18 @@
   cursor: pointer;
 }
 
-.Filters .Filter-Group .Filter-GroupList label input:not(:checked) {
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList label input:not(:checked) {
   background: white;
   border: 1px solid #979797 !important;
 }
 
-.Filters .Filter-Group .Filter-GroupList label input:checked {
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList label input:checked {
   background: #0076FF;
   color: white;
   position: relative;
 }
 
-.Filters .Filter-Group .Filter-GroupList label input:checked::after {
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList label input:checked::after {
   content: '';
   position: absolute;
   width: 1.5ex;
