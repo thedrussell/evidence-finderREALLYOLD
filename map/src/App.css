@@ -21,6 +21,7 @@
   font-weight: 700;
   color: #666666;
   padding: 2px 8px;
+  outline: 0;
 }
 
 .App .mapboxgl-popup .mapboxgl-popup-close-button:hover {
@@ -42,6 +43,12 @@
 
 .App .mapboxgl-popup .Popup-Content h1 a {
   color: #ee716c;
+  padding: 4px 0;
+}
+
+.App .mapboxgl-popup .Popup-Content h1 a:hover {
+  color: #000000;
+  /* text-decoration: none; */
 }
 
 .App .mapboxgl-popup .Popup-Content h2 {

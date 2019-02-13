@@ -2,26 +2,53 @@
   position: absolute;
   top: 26px;
   left: 26px;
-  bottom: 26px;
   z-index: 999999999999;
   background-color: white;
-  padding: 12px 14px;
   width: 248px;
 
   display: flex;
   flex-direction: column;
 
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.21)
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.21);
+  transition: bottom 1s ease-in-out;
 }
 
-.Filters h2 {
+.Filters--expanded {
+  bottom: 26px;
+}
+
+.Filters .Filters-Header {
+  display: flex;
+  cursor: pointer;
+  padding: 12px 14px;
+}
+
+.Filters .Filters-Header h2 {
+  flex: 1;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.15px;
   text-transform: uppercase;
-  margin: 0 0 40px 0;
+  margin: 0;
+  position: relative;
+}
+
+.Filters--expanded .Filters-Header {
+  margin-bottom: 40px;
+}
+
+.Filters .Filters-Header img.Filters-Toggle {
+  display: block;
+  padding: 18px 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.Filters--expanded .Filters-Header img.Filters-Toggle {
+  transform: rotate(180deg);
 }
 
 .Filters h3 {
@@ -83,6 +110,10 @@
 .Filters .Filter-Groups .Filter-Group .Filter-GroupList label input:not(:checked) {
   background: white;
   border: 1px solid #979797 !important;
+}
+
+.Filters .Filter-Groups .Filter-Group .Filter-GroupList label input:not(:checked):hover {
+  border: 1px solid #0076FF !important;
 }
 
 .Filters .Filter-Groups .Filter-Group .Filter-GroupList label input:checked {

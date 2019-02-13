@@ -1,140 +1,98 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import isEqual from 'lodash/isEqual';
+import cx from 'classnames';
 import './Filters.css';
+
+const icnArrow = require('./assets/icn-arrow.svg');
 
 class Filters extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      filters: []
+      filters: [],
+      isExpanded: false
     };
 
+    this.handleHeaderClick = this._handleHeaderClick.bind(this);
     this.handleInputChange = this._handleInputChange.bind(this);
-  }
-  _getTypes() {
-    const { filters } = this.state;
-
-    return this._getValueSet('type').map((value, i) => {
-      const isActive = filters.map(filter => filter.value === value).includes(true);
-      return (
-        <label key={i}>
-          <input
-            name="type"
-            value={value}
-            type="checkbox"
-            onChange={this.handleInputChange}
-            checked={isActive}
-          />
-          {value}
-        </label>
-      );
-    });
-  }
-  _getYearGroups() {
-    const { filters } = this.state;
-
-    return this._getValueSet('yearGroup').map((value, i) => {
-      const isActive = filters.map(filter => filter.value === value).includes(true);
-      return (
-        <label key={i}>
-          <input
-            name="yearGroup"
-            value={value}
-            type="checkbox"
-            onChange={this.handleInputChange}
-            checked={isActive}
-          />
-          {value}
-        </label>
-      );
-    });
-  }
-  _getInterventionCategories() {
-    const { filters } = this.state;
-
-    return this._getValueSet('interventionCategories').map((value, i) => {
-      const isActive = filters.map(filter => filter.value === value).includes(true);
-      return (
-        <label key={i}>
-          <input
-            name="interventionCategories"
-            value={value}
-            type="checkbox"
-            onChange={this.handleInputChange}
-            checked={isActive}
-          />
-          {value}
-        </label>
-      );
-    });
-  }
-  _getPopulationGroups() {
-    const { filters } = this.state;
-
-    return this._getValueSet('populationGroups').map((value, i) =>{
-      const isActive = filters.map(filter => filter.value === value).includes(true);
-      return (
-        <label key={i}>
-          <input
-            name="populationGroups"
-            value={value}
-            type="checkbox"
-            onChange={this.handleInputChange}
-            checked={isActive}
-          />
-          {value}
-        </label>
-      );
-    });
-  }
-  render() {
-    const { data } = this.props;
-    const { filters } = this.state;
-
-    const header = filters.length > 0 ? (data.features.length === 1 ? `${data.features.length} location` : `${data.features.length} locations`) : `Filters`;
-
-    return (
-      <div className="Filters">
-        <h2>{header}</h2>
-        <div className="Filter-Groups">
-          <div className="Filter-Group">
-            <h3>Type of study</h3>
-            <div className="Filter-GroupList">
-              {this._getTypes()}
-            </div>
-          </div>
-          <div className="Filter-Group">
-            <h3>Year of publication</h3>
-            <div className="Filter-GroupList">
-              {this._getYearGroups()}
-            </div>
-          </div>
-          {/*
-          <div className="Filter-Group">
-            <h3>Intervention categories</h3>
-            <div className="Filter-GroupList">
-              {this._getInterventionCategories()}
-            </div>
-          </div>
-          */}
-          <div className="Filter-Group">
-            <h3>Population groups</h3>
-            <div className="Filter-GroupList">
-              {this._getPopulationGroups()}
-            </div>
-          </div>
-        </div>
-      </div>
-    )
   }
   shouldComponentUpdate(nextProps, nextState) {
     const hasUpdatedFilters = nextState.filters.length !== this.state.filters.length
-
     hasUpdatedFilters && this.props.filterData(nextState.filters);
 
     return true;
+  }
+  render() {
+    const { data } = this.props;
+    const { filters, isExpanded } = this.state;
+
+    const className = cx({
+      "Filters": true,
+      "Filters--expanded": isExpanded
+    });
+
+    const header = filters.length > 0 ? `Filters (${filters.length})` : `Filters`;
+
+    return (
+      <div className={className}>
+        <div className="Filters-Header" onClick={this.handleHeaderClick}>
+          <h2>{header}</h2>
+          <img className="Filters-Toggle" src={icnArrow} />
+        </div>
+        {isExpanded &&
+          <div className="Filter-Groups">
+            <div className="Filter-Group">
+              <h3>Type of study</h3>
+              <div className="Filter-GroupList">
+                {this._getItems("type")}
+              </div>
+            </div>
+            <div className="Filter-Group">
+              <h3>Year of publication</h3>
+              <div className="Filter-GroupList">
+              {this._getItems("yearGroup")}
+              </div>
+            </div>
+            {/*
+            <div className="Filter-Group">
+              <h3>Intervention categories</h3>
+              <div className="Filter-GroupList">
+                {this._getItems("interventionCategories")}
+              </div>
+            </div>
+            */}
+            <div className="Filter-Group">
+              <h3>Population groups</h3>
+              <div className="Filter-GroupList">
+                {this._getItems("populationGroups")}
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    )
+  }
+  _getItems(property) {
+    const { filters } = this.state;
+
+    return this._getValueSet(property).map((value, i) =>{
+      const isActive = filters.map(filter => filter.value === value).includes(true);
+      return (
+        <label key={i}>
+          <input
+            name={property}
+            value={value}
+            type="checkbox"
+            onChange={this.handleInputChange}
+            checked={isActive}
+          />
+          {value}
+        </label>
+      );
+    });
+
   }
   _getValueSet(key) {
     const data = Object.assign({}, this.props.data);
@@ -152,6 +110,9 @@ class Filters extends Component {
     }, []);
 
     return valueSet.filter(n => n).sort();
+  }
+  _handleHeaderClick() {
+    this.setState({ isExpanded: !this.state.isExpanded })
   }
   _handleInputChange(event) {
     const { name, value, checked } = event.target;
