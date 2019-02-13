@@ -52,9 +52,11 @@ function getFeatures(rows) {
   console.log("getting features...");
 
   const entries = rows.map(function(row) {
+    const type = row.MAP === 'Effectiveness Map' ? 'Effectiveness' : (row.MAP === 'Implementation Map' ? 'Implementation study' : row.MAP);
+
     const properties = {
       id: row.ID,
-      type: row.MAP.replace("Map", "study"),
+      type: type,
       studyDesign: getColumnGroup(row, config.studyDesign),
       title: row.Title.trim(),
       year: row.Year.trim(),

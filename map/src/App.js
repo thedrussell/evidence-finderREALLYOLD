@@ -210,7 +210,7 @@ class App extends Component {
     let implementationFeatureCollection = Object.assign({}, geoJSON);
     implementationFeatureCollection.features = implementationFeatures;
 
-    const effectivenessFeatures = data.features.filter(n => n.properties.type === 'Effectiveness study');
+    const effectivenessFeatures = data.features.filter(n => n.properties.type === 'Effectiveness');
     let effectivenessFeatureCollection = Object.assign({}, geoJSON);
     effectivenessFeatureCollection.features = effectivenessFeatures;
 
