@@ -182,7 +182,6 @@ class App extends Component {
     this.setState({ data, doUpdateMap: true });
   }
   _updateMapData() {
-    console.log("updating map data...");
     const { mapStyle, data } = this.state;
     const featureCollections = this._getFeatureCollections(data)
 
@@ -193,7 +192,8 @@ class App extends Component {
     this.setState({ mapStyle: newMapStyle, doUpdateMap: false });
   }
   _loadMapData() {
-    const featureCollections = this._getFeatureCollections(geoJSON)
+    const featureCollections = this._getFeatureCollections(geoJSON);
+
     let mapStyle = defaultMapStyle
       .setIn(['sources', 'implementationStudiesByLocation'], fromJS({ type: 'geojson', data: featureCollections.implementation }))
       .set('layers', defaultMapStyle.get('layers').push(dataLayers.implementation))
