@@ -177,8 +177,12 @@ function getGeometryPoint(result) {
   const isApproximate = result.geometry.location_type === "APPROXIMATE";
 
   if(isApproximate) {
-    lng = disperseCoordinate(lng);
-    lat = disperseCoordinate(lat);
+    lng = disperseCoordinate(lng, 0.05);
+    lat = disperseCoordinate(lat, 0.05);
+  }
+  else {
+    lng = disperseCoordinate(lng, 0.01);
+    lat = disperseCoordinate(lat, 0.01);
   }
 
   return {
@@ -187,8 +191,8 @@ function getGeometryPoint(result) {
   }
 }
 
-function disperseCoordinate(coordinate) {
-  return coordinate + getRand(-0.1, 0.1);
+function disperseCoordinate(coordinate, radius) {
+  return coordinate + getRand(-radius, radius);
 }
 
 function getRand(min, max) {
