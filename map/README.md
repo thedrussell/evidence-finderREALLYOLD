@@ -34,6 +34,13 @@ now secrets add chi-evidence-finder-mapbox-token "secret-key-goes-here"
 npm run deploy
 ```
 
+If you get an error that the alias doesn't exist, here's a one-time fix:
+1. Log in to your [Zeit.sh dashboard](https://zeit.co/dashboard)
+2. Navigate to project `chi-evidence-finder`
+3. Select the latest deployment
+4. Click `Create alias` button
+5. Create an alias called `chi-evidence-finder.now.sh`
+
 
 ---
 
