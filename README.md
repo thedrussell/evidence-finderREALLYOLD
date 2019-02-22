@@ -1,6 +1,6 @@
 # evidence-finder
 Evidence Finder geographical map
-https://chi-map.now.sh
+https://chi-evidence-finder.now.sh
 
 ## Data Scraper
 Get study data and fetch location info.
