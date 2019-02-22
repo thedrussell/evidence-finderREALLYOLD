@@ -12,7 +12,7 @@ This project assumes that [this Google Spreadsheet](https://docs.google.com/spre
 npm install
 ```
 4. Create a [Google Maps API key](https://developers.google.com/maps/documentation/geocoding/get-api-key) and enable the Geocoding API.
-5. Create a file called `.env` in this folder and store the key like this:
+5. Create a file called `.env.local` in this folder and store the key like this:
 ```
 GOOGLE_MAPS_API_KEY=secret-key-goes-here
 ```
